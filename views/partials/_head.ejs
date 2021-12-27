@@ -1,6 +1,8 @@
 <head>
   <script>
-    function getFormAction(lang, url) {
+   
+   
+   function getFormAction(lang, url) {
       let subPath = url.substring(3);
       let action = '/'+ lang + subPath;
       return action;
@@ -15,13 +17,37 @@
    
       document.getElementById("langForm").action = action;
       document.getElementById("langButton").innerHTML = langOption;
+      return url;
 
       console.log({action, langOption});
     }
+
+    
+    
+    function getBackAction (url) {
+      let lastCharIndex = url.length-1;
+      if (url[lastCharIndex] === '/') {
+        url = url.substring(0,lastCharIndex);
+      }
+      let lastIndex = url.lastIndexOf('/');
+      if (lastIndex > 0) {
+        let backAction = url.substring(0, lastIndex);
+        document.getElementById("backForm").action = backAction;
+      } else {
+        document.getElementById("backForm").remove();
+    }}
+
+    
+    
+    function createLinks () {
+      let url = handleLang ();
+      getBackAction(url);
+    }
+
   </script>
 </head>
 
-<body id="body" onLoad="handleLang()">
+<body id="body" onLoad="createLinks()">
 
 
 
