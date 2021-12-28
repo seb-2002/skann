@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use "sass:math";
 
 //colors
 
@@ -11,15 +11,13 @@
 // $random-degree: random(360) * 1deg;
 // $random-color: hsl($random-hue, $random-saturation, $random-lightness);
 // $random-color-2: hsl($random-hue-2, $random-saturation-2, $random-lightness-2);
-$beige: #CCCCCC;
-
-
-
+$beige: #cccccc;
 
 //spacing
 $body-width: 100vw;
 $body-height: 100vh;
 $title-box-width: 90%;
+$box-radius: 5px;
 
 //font
 $p: 1.5rem;

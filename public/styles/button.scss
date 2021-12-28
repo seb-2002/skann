@@ -1,17 +1,20 @@
 button {
   border: none;
   background-color: $beige;
+  &.menu-button {
+    width: 100%;
+    text-align: left;
+    border-radius: $box-radius;
+  }
 }
 
-
-div.button-box{
- 
+div.button-box {
   display: flex;
   .language-button,
-  .back-button{
-     background-color: $beige;
+  .back-button {
+    background-color: $beige;
     margin-bottom: 1 * $p;
-    margin-left: .05 * $body-width;
+    margin-left: 0.05 * $body-width;
     width: 2rem;
     height: 2rem;
     transform: skewY(2deg);
@@ -19,12 +22,11 @@ div.button-box{
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    p{
+    p {
       font-size: $p;
       margin: 0;
-      
+
       // padding: .5*$p;
     }
   }
-   
 }

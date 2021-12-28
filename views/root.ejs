@@ -9,7 +9,7 @@
 <% for (let item in menuItems) { %>
   <div class="menu-box">
   <form method="GET" action="/<%=lang%>/<%=item%>">
-    <button type="button submit" id="backButton">
+    <button type="button submit" class="menu-button">
       <h2 class="menu-text">
         <%= menuItems[item].title %>
       </h2>
