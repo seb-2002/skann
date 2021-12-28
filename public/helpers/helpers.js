@@ -4,15 +4,20 @@ function getFormAction(lang, url) {
   return action;
 }
 
-function setLang() {
+function getLang() {
   const url = window.location.pathname;
   const thisLang = url.substring(1, 3);
+  return {thisLang, url};
+}
+
+function setLang(thisLang, url) {
   let allLangOptions = ["en", "fr"];
   let langOption = allLangOptions.filter((lang) => lang !== thisLang)[0];
   let action = getFormAction(langOption, url);
 
   document.getElementById("langForm").action = action;
   document.getElementById("langButton").innerHTML = langOption;
+
 }
 
 const backButton = `
@@ -42,6 +47,11 @@ function setBackAction(url, html) {
   }
 }
 
+function setHomeAction (thisLang) {
+  let action = `/${thisLang}`;
+  document.getElementById('homeButton').action = action;
+};
+
 function generateColorValues() {
   const randomSat = Math.random() * 100;
   const randomSat2 = Math.random() * 100;
@@ -67,10 +77,13 @@ function shrinkTitle() {
 
 
 function handleFunction() {
-  let url = window.location.pathname;
-  setLang();
+  let {thisLang, url} = getLang();
+  console.log(thisLang);
+  setLang(thisLang, url);
+  setHomeAction(thisLang);
   generateColorValues();
   shrinkTitle();
+
   // setBackAction(url, backButton);
 }
 

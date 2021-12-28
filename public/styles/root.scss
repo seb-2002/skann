@@ -3,6 +3,7 @@ div.title-box {
   transform: rotate(-90deg);
   bottom: 100px;
   right: -80px;
+  z-index: 2;
   h1 {
     font-weight: normal;
     font-size: 2.5rem;
@@ -24,6 +25,7 @@ div.menu-box {
   margin-left: 0px;
   transform: skewY(2deg);
   border-radius: $box-radius;
+  z-index: 3;
 
   h2 {
     margin: 0;

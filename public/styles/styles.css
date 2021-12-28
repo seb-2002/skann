@@ -53,6 +53,7 @@ div.title-box {
   transform: rotate(-90deg);
   bottom: 100px;
   right: -80px;
+  z-index: 2;
 }
 div.title-box h1 {
   font-weight: normal;
@@ -74,6 +75,7 @@ div.menu-box {
   margin-left: 0px;
   transform: skewY(2deg);
   border-radius: 5px;
+  z-index: 3;
 }
 div.menu-box h2 {
   margin: 0;
@@ -88,6 +90,9 @@ button.menu-button {
   width: 100%;
   text-align: left;
   border-radius: 5px;
+}
+button.home-button {
+  background: transparent;
 }
 
 div.button-box {

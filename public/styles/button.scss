@@ -6,6 +6,9 @@ button {
     text-align: left;
     border-radius: $box-radius;
   }
+  &.home-button{
+    background: transparent;
+  }
 }
 
 div.button-box {
