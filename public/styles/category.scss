@@ -1,0 +1,23 @@
+.category-body, .content-box{
+  @include flexColumn;
+  overflow: auto;
+}
+
+.content-box {
+  transform: skewY(-2deg);
+  overflow: auto;
+  margin-top: 20vh;
+}
+
+div.p-box{
+  @include greyTheme;
+  width: 80%;
+  margin-right: 2rem;
+  margin-bottom: 1.5rem;
+  &:nth-child(1){
+    margin-top: 10vh;
+  }
+  p{
+    margin: 0;
+  }
+}

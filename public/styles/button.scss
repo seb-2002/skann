@@ -9,12 +9,19 @@ button {
 }
 
 div.button-box {
+  position: absolute;
+  bottom: 0px;
   display: flex;
+  &__cat {
+   top: 0px;
+   right: 0px;
+  }
   .language-button,
   .back-button {
     background-color: $beige;
     margin-bottom: 1 * $p;
     margin-left: 0.05 * $body-width;
+    margin-top: 1 * $p;
     width: 2rem;
     height: 2rem;
     transform: skewY(2deg);
@@ -22,6 +29,10 @@ div.button-box {
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
+    &__cat {
+      margin-right: 0.05 * $body-width;
+      margin-top: 2 * $p;
+    }
     p {
       font-size: $p;
       margin: 0;

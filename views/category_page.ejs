@@ -1,18 +1,55 @@
 <%- include ('partials/_head.ejs') %>
 
 <div class="category-body">
-  <div class="flex-box">
+
+
+<div class="ticker-wrap">
+<div class="ticker">
+<% for (let i = 0; i < 20; i++) { %>
+
+  <div class="ticker__item"> <%=category.ticker%> </div>
+
+  <% } %>
+</div>
+</div>
+
+  <div class="content-box">
   
-  
-    <div class="menu-box">
-        <h2 class="menu-text">
-          <%= category.title %>
-        </h2>
-    </div>
+  <div class="p-box">
+    <p>Sebastian Kann (he/him) is a performer, theorist, dramaturge and performance maker.</p>
+  </div>  <div class="p-box">
+    <p> A graduate of the National Circus School in Montréal, his practice has been shaped by formative encounters with circus and dance communities in both Europe and North America.</p>
+  </div>  
+    <div class="p-box">
+    <p>His most recent performance, Always / Beautiful (created in 2019 with Natalie Oleinik), asks questions about why and how to stage technical virtuosity in the context of exhausting, performance-oriented success culture. </p>
+  </div>
+     <div class="p-box">
+    <p>    Kann is active as a writer, most recently co-editing Thinking Through Circus (APE Books, 2020), a collection of circus writing to which he also contributed a chapter.</p>
+  </div>
+     <div class="p-box">
+    <p> In his studio practice, he takes aim at collective fantasies of embodiment, autonomy, and spontaneity, in an attempt to make palpable some of the ways liberalism has rendered these concepts difficult, incoherent, or impossible.</p>
+  </div>
+     <div class="p-box">
+    <p> As a dramaturge, he works extensively with the independent circus scene in Québec, supporting the creative processes of Emile Pineault, François Bouvier, and the Chita Project (Anna Kichtchenko and Pablo Pramparo), among others.</p>
+  </div>
+     <div class="p-box">
+    <p>He lives in Montréal / Tiohtiá:ke, on the expropriated land of the Kanien’kehá:ka (Haudenosaunee Confederacy.</p>
+  </div>
+    
   
   </div>
 
 </div>
+
+      <div id="button-box"class="button-box button-box__cat">
+        <div >
+          <form id="langForm" method="GET">
+            <button class="language-button language-button__cat" type="button submit" >
+              <p id="langButton"></p>
+            </button>
+          </form>
+        </div>
+      </div>
 
 
 <%- include ('partials/_foot.ejs') %>

@@ -64,12 +64,14 @@ function shrinkTitle() {
   }
 }
 
+
+
 function handleFunction() {
   let url = window.location.pathname;
   setLang();
   generateColorValues();
   shrinkTitle();
-  setBackAction(url, backButton);
+  // setBackAction(url, backButton);
 }
 
 // module.exports = {
