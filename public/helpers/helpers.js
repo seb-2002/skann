@@ -4,7 +4,7 @@ function getFormAction(lang, url) {
   return action;
 }
 
-function handleLang() {
+function setLang() {
   const url = window.location.pathname;
   const thisLang = url.substring(1, 3);
   let allLangOptions = ["en", "fr"];
@@ -13,9 +13,6 @@ function handleLang() {
 
   document.getElementById("langForm").action = action;
   document.getElementById("langButton").innerHTML = langOption;
-  return url;
-
-  console.log({ action, langOption });
 }
 
 const backButton = `
@@ -32,7 +29,7 @@ function appendBackButton(html) {
   document.getElementById("button-box").innerHTML += html;
 }
 
-function getBackAction(url, html) {
+function setBackAction(url, html) {
   let lastCharIndex = url.length - 1;
   if (url[lastCharIndex] === "/") {
     url = url.substring(0, lastCharIndex);
@@ -43,12 +40,6 @@ function getBackAction(url, html) {
     let backAction = url.substring(0, lastIndex);
     document.getElementById("backForm").action = backAction;
   }
-}
-
-function createLinksandColors() {
-  let url = handleLang();
-  generateColorValues();
-  getBackAction(url, backButton);
 }
 
 function generateColorValues() {
@@ -63,10 +54,24 @@ function generateColorValues() {
   const randomColor2 = `hsl(${randomHue2}, ${randomSat2}%, ${randomLight2}%)`;
   const beige = "#CCCCCC";
   const newBackground = `linear-gradient(${randomDegree}, ${randomColor}, ${beige} , ${randomColor2})`;
-  console.log(newBackground);
   document.getElementById("body-box").style.background = newBackground;
 }
 
-module.exports = {
-  createLinksandColors,
-};
+function shrinkTitle() {
+  let url = window.location.pathname;
+  if (url.length > 4) {
+    document.getElementById("title").style.fontSize = "2rem";
+  }
+}
+
+function handleFunction() {
+  let url = window.location.pathname;
+  setLang();
+  generateColorValues();
+  shrinkTitle();
+  setBackAction(url, backButton);
+}
+
+// module.exports = {
+//   handleFunction,
+// };
