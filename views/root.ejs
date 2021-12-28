@@ -4,13 +4,27 @@
 <%- include ('partials/_head.ejs') %>  
 
 
+<div class="flex-box">
+
 <% for (let item in menuItems) { %>
+  <div class="menu-box">
+  <form method="GET" action="/<%=lang%>/<%=item%>">
+    <button type="button submit" id="backButton">
+      <h2 class="menu-text">
+        <%= menuItems[item].title %>
+      </h2>
+    </button>
+  </form>
+</div>
   
-  <p><%= menuItems[item].title %></p>
+  <!-- <p><%= menuItems[item].title %></p> -->
   
   <% } %>
+
+</div>
   
   <%- include ('partials/_foot.ejs') %>  
+
 
 
 

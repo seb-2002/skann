@@ -1,0 +1,25 @@
+@use 'sass:math';
+
+//colors
+
+// $random-saturation: percentage(math.div(random(100), 100));
+// $random-lightness: percentage(math.div((random(50)+40),100));
+// $random-saturation-2: percentage(math.div(random(100), 100));
+// $random-lightness-2: percentage(math.div((random(50)+40),100));
+// $random-hue: random(360);
+// $random-hue-2: random(360);
+// $random-degree: random(360) * 1deg;
+// $random-color: hsl($random-hue, $random-saturation, $random-lightness);
+// $random-color-2: hsl($random-hue-2, $random-saturation-2, $random-lightness-2);
+$beige: #CCCCCC;
+
+
+
+
+//spacing
+$body-width: 100vw;
+$body-height: 100vh;
+$title-box-width: 90%;
+
+//font
+$p: 1.5rem;

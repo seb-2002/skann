@@ -1,0 +1,18 @@
+body{
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#body-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: $body-height;
+  width: $body-width;
+  // background: linear-gradient($random-color 0%,
+  //       lighten($random-color, 25%) 100%); 
+//  background: linear-gradient($random-degree, $random-color, $beige 40%, $random-color-2);
+ overflow: hidden;
+  position: relative;
+}

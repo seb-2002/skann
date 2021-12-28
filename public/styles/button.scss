@@ -1,0 +1,30 @@
+button {
+  border: none;
+  background-color: $beige;
+}
+
+
+div.button-box{
+ 
+  display: flex;
+  .language-button,
+  .back-button{
+     background-color: $beige;
+    margin-bottom: 1 * $p;
+    margin-left: .05 * $body-width;
+    width: 2rem;
+    height: 2rem;
+    transform: skewY(2deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    p{
+      font-size: $p;
+      margin: 0;
+      
+      // padding: .5*$p;
+    }
+  }
+   
+}
