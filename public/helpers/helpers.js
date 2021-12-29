@@ -7,7 +7,7 @@ function getFormAction(lang, url) {
 function getLang() {
   const url = window.location.pathname;
   const thisLang = url.substring(1, 3);
-  return {thisLang, url};
+  return { thisLang, url };
 }
 
 function setLang(thisLang, url) {
@@ -17,7 +17,6 @@ function setLang(thisLang, url) {
 
   document.getElementById("langForm").action = action;
   document.getElementById("langButton").innerHTML = langOption;
-
 }
 
 const backButton = `
@@ -47,10 +46,13 @@ function setBackAction(url, html) {
   }
 }
 
-function setHomeAction (thisLang) {
+function setHomeAction(thisLang) {
   let action = `/${thisLang}`;
-  document.getElementById('homeButton').action = action;
-};
+  let homeButton = document.getElementById("homeButton");
+  if (homeButton) {
+    homeButton.action = action;
+  }
+}
 
 function generateColorValues() {
   const randomSat = Math.random() * 100;
@@ -74,10 +76,8 @@ function shrinkTitle() {
   }
 }
 
-
-
 function handleFunction() {
-  let {thisLang, url} = getLang();
+  let { thisLang, url } = getLang();
   console.log(thisLang);
   setLang(thisLang, url);
   setHomeAction(thisLang);

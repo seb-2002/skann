@@ -6,7 +6,7 @@ button {
     text-align: left;
     border-radius: $box-radius;
   }
-  &.home-button{
+  &.home-button {
     background: transparent;
   }
 }
@@ -16,10 +16,10 @@ div.button-box {
   bottom: 0px;
   display: flex;
   &__cat {
-   top: 0px;
-   right: 0px;
+    top: 0px;
+    right: 0px;
   }
-  .language-button,
+  .menu-button,
   .back-button {
     background-color: $beige;
     margin-bottom: 1 * $p;
@@ -33,8 +33,13 @@ div.button-box {
     align-items: center;
     border-radius: 2rem;
     &__cat {
-      margin-right: 0.05 * $body-width;
       margin-top: 2 * $p;
+    }
+    &__lang {
+      margin-right: 0.05 * $body-width;
+    }
+    &__home {
+      margin-right: 0;
     }
     p {
       font-size: $p;

@@ -4,8 +4,8 @@
   align-items: center;
 }
 
-@mixin greyTheme {
+@mixin greyTheme($opacity: 0.8) {
   border-radius: 5px;
   background-color: $beige;
-  opacity: .8;
+  opacity: $opacity;
 }

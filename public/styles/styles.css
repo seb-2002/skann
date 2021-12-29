@@ -52,12 +52,20 @@ a {
   text-decoration: none;
 }
 
+.no-text-decoration {
+  color: black;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
 div.title-box {
   position: absolute;
   transform: rotate(-90deg);
   bottom: 100px;
   right: -80px;
-  z-index: 2;
 }
 div.title-box h1 {
   font-weight: normal;
@@ -108,7 +116,7 @@ div.button-box__cat {
   top: 0px;
   right: 0px;
 }
-div.button-box .language-button,
+div.button-box .menu-button,
 div.button-box .back-button {
   background-color: #cccccc;
   margin-bottom: 1.5rem;
@@ -122,18 +130,26 @@ div.button-box .back-button {
   align-items: center;
   border-radius: 2rem;
 }
-div.button-box .language-button__cat,
+div.button-box .menu-button__cat,
 div.button-box .back-button__cat {
-  margin-right: 5vw;
   margin-top: 3rem;
 }
-div.button-box .language-button p,
+div.button-box .menu-button__lang,
+div.button-box .back-button__lang {
+  margin-right: 5vw;
+}
+div.button-box .menu-button__home,
+div.button-box .back-button__home {
+  margin-right: 0;
+}
+div.button-box .menu-button p,
 div.button-box .back-button p {
   font-size: 1.5rem;
   margin: 0;
 }
 
-.category-body, .content-box {
+.category-body,
+.content-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,15 +160,12 @@ div.button-box .back-button p {
   transform: skewY(-2deg);
   overflow: auto;
   margin-top: 20vh;
+  width: 100%;
 }
 
 div.p-box,
 div.show-box {
-  border-radius: 5px;
-  background-color: #cccccc;
-  opacity: 0.8;
-  width: 80%;
-  margin-right: 2rem;
+  width: 90%;
   margin-bottom: 1.5rem;
 }
 div.p-box:nth-child(1),
@@ -164,9 +177,22 @@ div.show-box p {
   margin: 0;
 }
 
+div.p-box {
+  border-radius: 5px;
+  background-color: #cccccc;
+  opacity: 1;
+}
+
+div.show-box {
+  border-radius: 5px;
+  background-color: #cccccc;
+  opacity: 0.8;
+}
+
 .performance-img {
   max-width: 100%;
-  border-radius: 5px 5px 0 0;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: -5px;
 }
 
 .credits {

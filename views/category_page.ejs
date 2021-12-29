@@ -25,7 +25,7 @@
 
             <div class="p-box p-box__link">
               <a href="<%=category.text[i].href%>">
-                <p><%=category.text[i].p%></p>
+                <p><span class="no-text-decoration"><%=category.text[i].p%></span>&nbsp&nbsp&nbsp→</p>
               </a>
             </div> 
             
@@ -51,11 +51,11 @@
           <% if (perf !== "title" && perf !== "ticker" && perf !== "href") { %>
 
               <div class="show-box">
-                <img class="performance-img" src="<%=category[perf].src%>" alt="">
                  <a href="<%=category.href%><%=perf%>">
-                  <p><%=category[perf].title%> (<%=category[perf].year%>)</p>
+                  <p><%=category[perf].title%> (<%=category[perf].year%>)&nbsp&nbsp&nbsp→</p>
                  </a>
                 <p class="credits"><%=category[perf].credits%></p>
+                <img class="performance-img" src="<%=category[perf].src%>" alt="">
               </div>
             
             
@@ -74,13 +74,17 @@
 
 <!-- language button  -->
 <div id="button-box"class="button-box button-box__cat">
-  <div >
-    <form id="langForm" method="GET">
-      <button class="language-button language-button__cat" type="button submit" >
-        <p id="langButton"></p>
+  <div class="flex" >
+    <form id="homeButton" method="GET">
+      <button class="menu-button menu-button__home menu-button__cat" type="button submit" >
+        <p id="">🏠</p>
       </button>
     </form>
-  </div>
+      <form id="langForm" method="GET">
+        <button class="menu-button menu-button__lang menu-button__cat" type="button submit">
+          <p id="langButton"></p>
+        </button>
+      </form>
 </div>
 
 
