@@ -17,14 +17,52 @@
   <div class="content-box">
 
   <!-- bio page -->
-    <% if (category.title === "Bio") { %>
+    <% if (category.title === "Bio" && category.text) { %>
       
         <% for (let i=0; i < category.text.length; i++) { %>
           
-          <div class="p-box">
-            <p><%=category.text[i].p%></p>
-          </div> 
+          <% if (category.text[i].href) { %>
+
+            <div class="p-box p-box__link">
+              <a href="<%=category.text[i].href%>">
+                <p><%=category.text[i].p%></p>
+              </a>
+            </div> 
+            
+            
+            <% } else { %>
+              
+              <div class="p-box">
+                  <p><%=category.text[i].p%></p>
+              </div> 
+              
+
+          <%  } %>
+
       
+        <% } %>
+      
+    <% } %>
+
+    <% if (category.title === "Performance") { %>
+      
+        <% for (let perf in category) { %>
+          
+          <% if (perf !== "title" && perf !== "ticker" && perf !== "href") { %>
+
+              <div class="show-box">
+                <img class="performance-img" src="<%=category[perf].src%>" alt="">
+                 <a href="<%=category.href%><%=perf%>">
+                  <p><%=category[perf].title%> (<%=category[perf].year%>)</p>
+                 </a>
+                <p class="credits"><%=category[perf].credits%></p>
+              </div>
+            
+            
+            <% } else { %> 
+
+          <%  } %>
+
         <% } %>
       
     <% } %>

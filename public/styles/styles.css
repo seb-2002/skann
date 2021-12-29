@@ -48,6 +48,10 @@ body {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+}
+
 div.title-box {
   position: absolute;
   transform: rotate(-90deg);
@@ -142,7 +146,8 @@ div.button-box .back-button p {
   margin-top: 20vh;
 }
 
-div.p-box {
+div.p-box,
+div.show-box {
   border-radius: 5px;
   background-color: #cccccc;
   opacity: 0.8;
@@ -150,11 +155,22 @@ div.p-box {
   margin-right: 2rem;
   margin-bottom: 1.5rem;
 }
-div.p-box:nth-child(1) {
+div.p-box:nth-child(1),
+div.show-box:nth-child(1) {
   margin-top: 10vh;
 }
-div.p-box p {
+div.p-box p,
+div.show-box p {
   margin: 0;
+}
+
+.performance-img {
+  max-width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.credits {
+  font-size: 0.75rem;
 }
 
 .ticker-wrap {

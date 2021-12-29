@@ -9,7 +9,8 @@
   margin-top: 20vh;
 }
 
-div.p-box{
+div.p-box,
+div.show-box{
   @include greyTheme;
   width: 80%;
   margin-right: 2rem;
@@ -21,3 +22,14 @@ div.p-box{
     margin: 0;
   }
 }
+
+.performance-img {
+  max-width: 100%;
+  border-radius: $box-radius $box-radius 0 0;
+}
+
+.credits {
+  font-size: .75rem;
+}
+
+
