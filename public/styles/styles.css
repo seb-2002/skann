@@ -162,7 +162,7 @@ div.button-box .back-button p {
 .content-box {
   transform: skewY(-2deg);
   overflow: auto;
-  margin-top: 20vh;
+  margin-top: 10vh;
   width: 100%;
 }
 
