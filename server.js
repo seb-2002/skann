@@ -15,7 +15,7 @@ app.use("/static", express.static("public"));
 const { db } = require("./dbs");
 const { redirect } = require("express/lib/response");
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`skann listening on port ${PORT}!`);
 });
 
