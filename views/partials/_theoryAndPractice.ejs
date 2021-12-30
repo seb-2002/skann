@@ -33,14 +33,19 @@
               <!-- check if there is a link -->
               <% if (thisProject.href) { %>
                 <a href="<%=thisProject.href%>">
-                  <p class="credits">
-                    <span class="no-text-decoration">
-                      <%=thisProject.description%>
-                    </span>
-                      <span class="link-arrow">
-                        &nbsp&nbsp&nbsp→</p>
+                 
+                    <div class="credits credits-flex">
+                      <span class="no-text-decoration">
+                        <%=thisProject.description%>
                       </span>
-                  </p>
+                        <span class="link-arrow">
+                          &nbsp&nbsp&nbsp→
+                        </span>
+                    </div>
+                        
+                   
+
+                 
                 </a>
               </br>
               

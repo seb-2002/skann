@@ -26,6 +26,10 @@ div.year-box {
 
 div.p-box {
   @include greyTheme($opacity: 1);
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 div.show-box,
@@ -41,6 +45,9 @@ div.year-box {
 
 .credits {
   font-size: 0.75rem;
+  &-flex {
+    display: flex;
+  }
 }
 
 .link-arrow {

@@ -188,6 +188,10 @@ div.p-box {
   background-color: #cccccc;
   opacity: 1;
 }
+div.p-box .flex-container {
+  display: flex;
+  align-items: center;
+}
 
 div.show-box,
 div.year-box {
@@ -204,6 +208,9 @@ div.year-box {
 
 .credits {
   font-size: 0.75rem;
+}
+.credits-flex {
+  display: flex;
 }
 
 .link-arrow {
