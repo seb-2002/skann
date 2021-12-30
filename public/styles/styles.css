@@ -65,7 +65,7 @@ a {
 div.title-box {
   position: absolute;
   transform: rotate(-90deg);
-  bottom: 100px;
+  bottom: 125px;
   right: -80px;
 }
 div.title-box h1 {
@@ -77,6 +77,9 @@ div.flex-box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5vh;
+  height: 75vh;
+  justify-content: space-around;
 }
 
 div.menu-box {
@@ -84,7 +87,6 @@ div.menu-box {
   opacity: 0.8;
   width: 90%;
   padding: 0;
-  margin-top: 40px;
   margin-left: 0px;
   transform: skewY(2deg);
   border-radius: 5px;
@@ -120,7 +122,7 @@ div.button-box__cat {
 div.button-box .menu-button,
 div.button-box .back-button {
   background-color: #cccccc;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   margin-left: 5vw;
   margin-top: 1.5rem;
   width: 2rem;
@@ -202,6 +204,10 @@ div.year-box {
 
 .credits {
   font-size: 0.75rem;
+}
+
+.link-arrow {
+  font-size: 1.5rem;
 }
 
 .ticker-wrap {

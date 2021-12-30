@@ -1,7 +1,7 @@
 div.title-box {
   position: absolute;
   transform: rotate(-90deg);
-  bottom: 100px;
+  bottom: 125px;
   right: -80px;
   // z-index: 2;
   h1 {
@@ -11,9 +11,10 @@ div.title-box {
 }
 
 div.flex-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexColumn;
+  margin-top: 5vh;
+  height: 75vh;
+  justify-content: space-around;
 }
 
 div.menu-box {
@@ -21,7 +22,6 @@ div.menu-box {
   opacity: 0.8;
   width: $title-box-width;
   padding: 0;
-  margin-top: 40px;
   margin-left: 0px;
   transform: skewY(2deg);
   border-radius: $box-radius;
