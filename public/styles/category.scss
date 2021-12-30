@@ -7,7 +7,7 @@
 .content-box {
   transform: skewY(-2deg);
   overflow: auto;
-  margin-top: 10vh;
+  margin-top: 20vh;
   width: 100%;
 }
 
@@ -16,9 +16,6 @@ div.show-box,
 div.year-box {
   width: 90%;
   margin-bottom: 1.5rem;
-  &:nth-child(1) {
-    margin-top: 10vh;
-  }
   p {
     margin: 0;
   }

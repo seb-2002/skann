@@ -162,7 +162,7 @@ div.button-box .back-button p {
 .content-box {
   transform: skewY(-2deg);
   overflow: auto;
-  margin-top: 10vh;
+  margin-top: 20vh;
   width: 100%;
 }
 
@@ -171,11 +171,6 @@ div.show-box,
 div.year-box {
   width: 90%;
   margin-bottom: 1.5rem;
-}
-div.p-box:nth-child(1),
-div.show-box:nth-child(1),
-div.year-box:nth-child(1) {
-  margin-top: 10vh;
 }
 div.p-box p,
 div.show-box p,
