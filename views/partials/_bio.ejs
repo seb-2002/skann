@@ -1,0 +1,30 @@
+<% if (category.title==="Bio" && category.text) { %>
+
+  <% for (let i=0; i < category.text.length; i++) { %>
+
+    <% if (category.text[i].href) { %>
+
+      <div class="p-box p-box__link">
+        <a href="<%=category.text[i].href%>">
+          <p><span class="no-text-decoration">
+              <%=category.text[i].p%>
+            </span>&nbsp&nbsp&nbsp→</p>
+        </a>
+      </div>
+
+
+      <% } else { %>
+
+        <div class="p-box">
+          <p>
+            <%=category.text[i].p%>
+          </p>
+        </div>
+
+
+        <% } %>
+
+
+          <% } %>
+
+            <% } %>

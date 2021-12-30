@@ -17,55 +17,17 @@
   <div class="content-box">
 
   <!-- bio page -->
-    <% if (category.title === "Bio" && category.text) { %>
-      
-        <% for (let i=0; i < category.text.length; i++) { %>
-          
-          <% if (category.text[i].href) { %>
+  
+  <%- include ('partials/_bio.ejs') %>
 
-            <div class="p-box p-box__link">
-              <a href="<%=category.text[i].href%>">
-                <p><span class="no-text-decoration"><%=category.text[i].p%></span>&nbsp&nbsp&nbsp→</p>
-              </a>
-            </div> 
-            
-            
-            <% } else { %>
-              
-              <div class="p-box">
-                  <p><%=category.text[i].p%></p>
-              </div> 
-              
+    <!-- performances page -->
 
-          <%  } %>
+    <%- include ('partials/_performances.ejs') %>
+    
 
-      
-        <% } %>
-      
-    <% } %>
+    <!-- theory and practice page -->
 
-    <% if (category.title === "Performance") { %>
-      
-        <% for (let perf in category) { %>
-          
-          <% if (perf !== "title" && perf !== "ticker" && perf !== "href") { %>
-
-              <div class="show-box">
-                 <a href="<%=category.href%><%=perf%>">
-                  <p><%=category[perf].title%> (<%=category[perf].year%>)&nbsp&nbsp&nbsp→</p>
-                 </a>
-                <p class="credits"><%=category[perf].credits%></p>
-                <img class="performance-img" src="<%=category[perf].src%>" alt="">
-              </div>
-            
-            
-            <% } else { %> 
-
-          <%  } %>
-
-        <% } %>
-      
-    <% } %>
+    <%- include ('partials/_theoryAndPractice.ejs') %>
 
   <!--end content box  -->
   </div>
@@ -89,3 +51,4 @@
 
 
 <%- include ('partials/_foot.ejs') %>
+

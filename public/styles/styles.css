@@ -164,16 +164,19 @@ div.button-box .back-button p {
 }
 
 div.p-box,
-div.show-box {
+div.show-box,
+div.year-box {
   width: 90%;
   margin-bottom: 1.5rem;
 }
 div.p-box:nth-child(1),
-div.show-box:nth-child(1) {
+div.show-box:nth-child(1),
+div.year-box:nth-child(1) {
   margin-top: 10vh;
 }
 div.p-box p,
-div.show-box p {
+div.show-box p,
+div.year-box p {
   margin: 0;
 }
 
@@ -183,7 +186,8 @@ div.p-box {
   opacity: 1;
 }
 
-div.show-box {
+div.show-box,
+div.year-box {
   border-radius: 5px;
   background-color: #cccccc;
   opacity: 0.8;
@@ -222,8 +226,8 @@ div.show-box {
   animation-timing-function: linear;
   -webkit-animation-name: ticker;
   animation-name: ticker;
-  -webkit-animation-duration: 30s;
-  animation-duration: 30s;
+  -webkit-animation-duration: 60s;
+  animation-duration: 60s;
 }
 .ticker-wrap .ticker__item {
   display: inline-block;

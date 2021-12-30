@@ -1,0 +1,65 @@
+<!-- theory and practice page -->
+
+<% if (category.title==="Theory/Practice" ) { %>
+
+  <% for (let year in category) { %>
+    
+    <!-- each year box starts here  -->
+    <% if (year !=="title" && year !=="ticker" ) { %>
+
+      <div class="year-box">
+        
+        <!-- prints the year -->
+        <p>
+          <%=category[year].year%>
+        </p>
+        
+        <!-- loop through each practice ... -->
+        <% for (let practice in category[year]) { %>
+          <%let thisPractice=category[year][practice]%>
+          
+          <!--check for projects entries  -->
+          <%  if (thisPractice.projects && Object.keys(thisPractice.projects).length > 0) { %>
+          
+            <!-- print the title of the practice -->
+            <p>
+              <%=thisPractice.title%>
+            </p>
+            
+            <!-- loop through each project entry -->
+            <% for (let project in thisPractice.projects) { %>
+              <% let thisProject=thisPractice.projects[project] %>
+              
+              <!-- check if there is a link -->
+              <% if (thisProject.href) { %>
+                <a href="<%=thisProject.href%>">
+                  <p class="credits">
+                    <span class="no-text-decoration">
+                      <%=thisProject.description%>
+                    </span>&nbsp&nbsp&nbsp→
+                  </p>
+                </a>
+              </br>
+              
+              <!-- if no link ... -->
+              <% } else {%>
+                <p class="credits">
+                  <%=thisProject.description%>
+                </p>
+              </br>
+              
+              <% } %>
+              
+            <% } %>
+              
+          <% } %>
+
+        <% } %>
+
+      </div>
+
+    <% }%>
+
+  <% } %>
+
+<% } %>

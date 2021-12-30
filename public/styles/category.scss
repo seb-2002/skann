@@ -12,7 +12,8 @@
 }
 
 div.p-box,
-div.show-box {
+div.show-box,
+div.year-box {
   width: 90%;
   margin-bottom: 1.5rem;
   &:nth-child(1) {
@@ -27,7 +28,8 @@ div.p-box {
   @include greyTheme($opacity: 1);
 }
 
-div.show-box {
+div.show-box,
+div.year-box {
   @include greyTheme;
 }
 
