@@ -65,7 +65,7 @@ a {
 div.title-box {
   position: absolute;
   transform: rotate(-90deg);
-  bottom: 200px;
+  bottom: 33vh;
   right: -80px;
 }
 div.title-box h1 {
