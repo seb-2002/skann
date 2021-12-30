@@ -1,17 +1,17 @@
 const express = require("express");
+const compression = require("compression");
+const helmet = require("helmet");
+
 const app = express();
+app.use(helmet());
 const PORT = 8080;
 
 app.set("view engine", "ejs");
-// app.use(express.static('public'));
-app.use('/static', express.static('public'));
+
+app.use(compression()); //Compress all routes
+app.use("/static", express.static("public"));
 
 const { db } = require("./dbs");
-
-const urlDatabase = {
-  b2xVn2: "http://www.lighthouselabs.ca",
-  "9sm5xK": "http://www.google.com",
-};
 
 app.listen(PORT, () => {
   console.log(`skann listening on port ${PORT}!`);
@@ -20,18 +20,6 @@ app.listen(PORT, () => {
 app.get("/urls.json", (req, res) => {
   res.json(db);
 });
-
-// app.get("/en", (req, res) => {
-//   const params = JSON.stringify(req.params);
-//   const templateVars = { menuItems: db.en.menuItems, params };
-//   res.render("root", templateVars);
-// });
-
-// app.get("/", (req, res) => {
-//   const params = JSON.stringify(req.params);
-//   const templateVars = { menuItems: db.fr.menuItems, params: params };
-//   res.render("root", templateVars);
-// });
 
 app.get("/:lang", (req, res) => {
   const lang = req.params.lang;

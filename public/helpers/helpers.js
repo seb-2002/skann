@@ -87,6 +87,9 @@ function handleFunction() {
   // setBackAction(url, backButton);
 }
 
+window.onload = (e) => {
+  handleFunction();
+};
 // module.exports = {
 //   handleFunction,
 // };
