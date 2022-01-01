@@ -15,10 +15,22 @@ div.button-box {
   position: absolute;
   bottom: 0px;
   display: flex;
+  width: 100%;
   &__cat {
     top: 0px;
     right: 0px;
+    height: 10vh;
   }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .buttons-right {
+    display: flex;
+  }
+
   .menu-button,
   .back-button {
     background-color: $beige;

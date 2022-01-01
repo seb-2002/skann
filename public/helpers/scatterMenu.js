@@ -8,17 +8,11 @@ const getNumAbsoluteValue = (max, difference, array) => {
   let resultsArray = [];
   while (resultsArray.length < array.length) {
     newNum = Math.floor(Math.random() * (max + 1));
-    console.log(`Testing ${newNum}`);
     for (let elm of array) {
-      console.log(`Testing against ${elm}`);
       if (elm - newNum > difference || elm - newNum < -difference) {
-        console.log(`${newNum} is at least ${difference} away from ${elm}`);
         resultsArray.push(newNum);
-        console.log(`Results array: ${resultsArray}`);
       } else {
-        console.log(`${newNum} is too close to ${elm}!`);
         resultsArray = [];
-        console.log(`Results array: ${resultsArray}`);
       }
     }
     if (resultsArray.length < array.length && resultsArray.length > 0) {
@@ -50,7 +44,6 @@ const assignStyles = (className, posArray1, posArray2) => {
   let howManyObjects = countHTMLObjectsByClass(className);
   for (i = 1; i <= posArray1.length; i++) {
     let thisElm = document.getElementsByClassName(`${className}-${i}`)[0];
-    console.log(thisElm);
     thisElm.style.top = `${posArray1[i - 1]}%`;
     thisElm.style.left = `${posArray2[i - 1]}%`;
   }

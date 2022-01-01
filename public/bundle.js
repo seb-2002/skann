@@ -1,6 +1,4 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-const { generateObjectPositions } = require("./scatterMenu");
-
 function getFormAction(lang, url) {
   let subPath = url.substring(3);
   let action = "/" + lang + subPath;
@@ -23,17 +21,20 @@ function setLang(thisLang, url) {
 }
 
 const backButton = `
-    <div>
+    
     <form id="backForm" method="GET">
-      <button type="button submit" class="back-button" id="backButton">
-        <p id="backButton"> <- </p>
+      <button type="button submit" class="menu-button menu-button__cat" id="backButton">
+        <p id="backButton"> ⬅ </p>
       </button>
     </form>
-    </div>
+    
   `;
 
 function appendBackButton(html) {
-  document.getElementById("button-box").innerHTML += html;
+  let buttonBox = document.getElementById("button-box__home");
+  let priorContent = buttonBox.innerHTML;
+  buttonBox.innerHTML = html + priorContent;
+  // document.getElementById("button-box__flex").innerHTML += html;
 }
 
 function setBackAction(url, html) {
@@ -57,6 +58,15 @@ function setHomeAction(thisLang) {
   }
 }
 
+module.exports = {
+  getLang,
+  setLang,
+  setHomeAction,
+  setBackAction,
+  backButton,
+};
+
+},{}],2:[function(require,module,exports){
 function generateColorValues() {
   const randomSat = Math.random() * 100;
   const randomSat2 = Math.random() * 100;
@@ -72,13 +82,11 @@ function generateColorValues() {
   document.getElementById("body-box").style.background = newBackground;
 }
 
-function shrinkTitle() {
-  let url = window.location.pathname;
-  if (url.length > 4) {
-    document.getElementById("title").style.fontSize = "2rem";
-  }
-}
+module.exports = {
+  generateColorValues,
+};
 
+},{}],3:[function(require,module,exports){
 function isMobile() {
   let width = screen.width;
   if (width >= 540) {
@@ -88,11 +96,26 @@ function isMobile() {
   }
 }
 
+module.exports = { isMobile };
+
+},{}],4:[function(require,module,exports){
+const { generateObjectPositions } = require("./scatterMenu");
+const {
+  getLang,
+  setLang,
+  setHomeAction,
+  backButton,
+  setBackAction,
+} = require("./buttons");
+const { generateColorValues } = require("./handleColors");
+const { shrinkTitle } = require("./title");
+const { isMobile } = require("./handleResponsivity");
+
 function handleFunction() {
   let { thisLang, url } = getLang();
-  console.log(thisLang);
   setLang(thisLang, url);
   setHomeAction(thisLang);
+  setBackAction(url, backButton);
   generateColorValues();
   shrinkTitle();
   if (!isMobile()) {
@@ -104,7 +127,7 @@ window.onload = (e) => {
   handleFunction();
 };
 
-},{"./scatterMenu":2}],2:[function(require,module,exports){
+},{"./buttons":1,"./handleColors":2,"./handleResponsivity":3,"./scatterMenu":5,"./title":6}],5:[function(require,module,exports){
 const countHTMLObjectsByClass = (className) => {
   let HTMLObjects = document.getElementsByClassName(className);
   return HTMLObjects.length;
@@ -115,17 +138,11 @@ const getNumAbsoluteValue = (max, difference, array) => {
   let resultsArray = [];
   while (resultsArray.length < array.length) {
     newNum = Math.floor(Math.random() * (max + 1));
-    console.log(`Testing ${newNum}`);
     for (let elm of array) {
-      console.log(`Testing against ${elm}`);
       if (elm - newNum > difference || elm - newNum < -difference) {
-        console.log(`${newNum} is at least ${difference} away from ${elm}`);
         resultsArray.push(newNum);
-        console.log(`Results array: ${resultsArray}`);
       } else {
-        console.log(`${newNum} is too close to ${elm}!`);
         resultsArray = [];
-        console.log(`Results array: ${resultsArray}`);
       }
     }
     if (resultsArray.length < array.length && resultsArray.length > 0) {
@@ -157,7 +174,6 @@ const assignStyles = (className, posArray1, posArray2) => {
   let howManyObjects = countHTMLObjectsByClass(className);
   for (i = 1; i <= posArray1.length; i++) {
     let thisElm = document.getElementsByClassName(`${className}-${i}`)[0];
-    console.log(thisElm);
     thisElm.style.top = `${posArray1[i - 1]}%`;
     thisElm.style.left = `${posArray2[i - 1]}%`;
   }
@@ -180,4 +196,14 @@ module.exports = {
   generateObjectPositions,
 };
 
-},{}]},{},[1]);
+},{}],6:[function(require,module,exports){
+function shrinkTitle() {
+  let url = window.location.pathname;
+  if (url.length > 4) {
+    document.getElementById("title").style.fontSize = "2rem";
+  }
+}
+
+module.exports = { shrinkTitle };
+
+},{}]},{},[4]);

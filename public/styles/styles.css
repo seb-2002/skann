@@ -138,10 +138,20 @@ div.button-box {
   position: absolute;
   bottom: 0px;
   display: flex;
+  width: 100%;
 }
 div.button-box__cat {
   top: 0px;
   right: 0px;
+  height: 10vh;
+}
+div.button-box__flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+div.button-box .buttons-right {
+  display: flex;
 }
 div.button-box .menu-button,
 div.button-box .back-button {
