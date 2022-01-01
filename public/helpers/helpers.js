@@ -95,7 +95,7 @@ function handleFunction() {
   generateColorValues();
   shrinkTitle();
   if (!isMobile()) {
-    generateObjectPositions("menu-box", 80, 3);
+    generateObjectPositions("menu-box", 75, 5);
   }
 }
 
