@@ -42,12 +42,12 @@ div.year-box {
 }
 
 .credits {
-  font-size: 0.75rem;
+  font-size: $info-size;
   &-flex {
     display: flex;
   }
 }
 
 .link-arrow {
-  font-size: 2rem;
+  font-size: $arrow-size;
 }
