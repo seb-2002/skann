@@ -1,3 +1,5 @@
+const { generateObjectPositions } = require("./scatterMenu");
+
 function getFormAction(lang, url) {
   let subPath = url.substring(3);
   let action = "/" + lang + subPath;
@@ -76,6 +78,15 @@ function shrinkTitle() {
   }
 }
 
+function isMobile() {
+  let width = screen.width;
+  if (width >= 540) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
 function handleFunction() {
   let { thisLang, url } = getLang();
   console.log(thisLang);
@@ -83,13 +94,11 @@ function handleFunction() {
   setHomeAction(thisLang);
   generateColorValues();
   shrinkTitle();
-
-  // setBackAction(url, backButton);
+  if (!isMobile()) {
+    generateObjectPositions("menu-box", 80, 3);
+  }
 }
 
 window.onload = (e) => {
   handleFunction();
 };
-// module.exports = {
-//   handleFunction,
-// };

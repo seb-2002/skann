@@ -5,9 +5,9 @@
 
 
 <div class="flex-box">
-
+<% let index = 1 %>
 <% for (let item in menuItems) { %>
-  <div class="menu-box">
+  <div class="menu-box menu-box-<%= index %>">
   <form method="GET" action="/<%=lang%>/<%=item%>">
     <button type="button submit" class="menu-button">
       <h2 class="menu-text">
@@ -18,7 +18,7 @@
 </div>
   
   <!-- <p><%= menuItems[item].title %></p> -->
-  
+  <% index ++ %>
   <% } %>
 
 </div>

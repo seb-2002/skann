@@ -32,3 +32,28 @@ div.menu-box {
     font-weight: normal;
   }
 }
+
+@media screen and (min-width: 540px) {
+  div.flex-box {
+    position: relative;
+  }
+  div.menu-box {
+    position: absolute;
+    width: auto;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  h2 {
+    font-size: 4rem;
+  }
+}

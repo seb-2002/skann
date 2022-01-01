@@ -40,12 +40,12 @@ app.get("/", (req, res) => {
 
 app.get("/:lang", (req, res) => {
   const lang = req.params.lang;
-  const templateVars = {
-    menuItems: db[lang].menuItems,
-    lang,
-  };
-
-  if (lang) {
+  console.log(`Lang = ${lang}`);
+  if (lang === "en" || lang === "fr") {
+    const templateVars = {
+      menuItems: db[lang].menuItems,
+      lang,
+    };
     res.render("root", templateVars);
   }
 });
