@@ -14,7 +14,7 @@ function handleFunction() {
   let { thisLang, url } = getLang();
   setLang(thisLang, url);
   setHomeAction(thisLang);
-  setBackAction(url, backButton);
+  // setBackAction(url, backButton);
   generateColorValues();
   shrinkTitle();
   if (!isMobile()) {

@@ -15,6 +15,8 @@ app.use("/static", express.static("public"));
 const { db } = require("./dbs");
 const { redirect } = require("express/lib/response");
 
+const browsingHistory = [];
+
 app.listen(process.env.PORT || PORT, () => {
   console.log(`skann listening on port ${PORT}!`);
 });
@@ -36,17 +38,22 @@ app.get("/", (req, res) => {
     //else serve default lang
     res.redirect(`/${defaultLang}`);
   }
+  browsingHistory.push("/");
+  console.log(`Browsing history: ${browsingHistory}`);
 });
 
 app.get("/:lang", (req, res) => {
   const lang = req.params.lang;
-  console.log(`Lang = ${lang}`);
   if (lang === "en" || lang === "fr") {
     const templateVars = {
       menuItems: db[lang].menuItems,
       lang,
     };
     res.render("root", templateVars);
+  }
+  if (lang !== "favicon.ico") {
+    browsingHistory.push(lang);
+    console.log(`Browsing history: ${browsingHistory}`);
   }
 });
 
