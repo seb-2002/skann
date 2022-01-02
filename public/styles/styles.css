@@ -265,6 +265,10 @@ div.year-box a:last-of-type img {
   align-items: center;
 }
 
+.work-flex {
+  align-items: center;
+}
+
 .link-arrow {
   font-size: 2rem;
 }
