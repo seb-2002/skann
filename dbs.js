@@ -47,13 +47,16 @@ const db = {
           src: "",
           credits: "creation- Sebastian Kann",
         },
-        acrobatetoimeme: {
-          title: "acrobatetoimeme.com",
-          year: "2021",
-          src: "/static/src/franky_img.png",
-          credits: "web design and development- Sebastian Kann",
-          href_ex: "https://www.acrobatetoimeme.com/",
+
+        always_beautiful: {
+          title: "Always / Beautiful",
+          ticker: "a/b",
+          year: 2019,
+          src: "/static/src/ab_pic_1.jpg",
+          credits:
+            "creation- Natalie Oleinik + Sebastian Kann // dramaturgy- Ilse Ghekiere // lights- Bert van Dijck // rigging- Lee Harry Clayden // special thanks to- Hugo Mega, François Bouvier, Vera Tussing, Anneleen Keppens",
         },
+
         choreographing_touch: {
           title: "Choreographing Touch - Conversations",
           year: "2021",
@@ -63,13 +66,14 @@ const db = {
           href_ex:
             "https://www.spreaker.com/show/choreographing-touch-conversations",
         },
-        always_beautiful: {
-          title: "Always / Beautiful",
-          ticker: "a/b",
-          year: 2019,
-          src: "/static/src/ab_pic_1.jpg",
+
+        thinking_through_circus: {
+          title: "Thinking Through Circus",
+          year: "2020",
+          src: "/static/src/ttc_img.png",
           credits:
-            "creation- Natalie Oleinik + Sebastian Kann // dramaturgy- Ilse Ghekiere // lights- Bert van Dijck // rigging- Lee Harry Clayden // special thanks to- Hugo Mega, François Bouvier, Vera Tussing, Anneleen Keppens",
+            "edited by- Bauke Lievens, Sebastian Kann, Quintijn Ketels, Vincent Focquet (The Circus Dialogues) // with contributions by- Camille Paycha, Dana Dugan, Mardulier en Deprez, Francesca Hyde, Josef Stiller, Natalie Oleinik, Anna Tauber, Floor van Leeuwen, Iris Carta, Alexandre Fray, Aline Breucker, Fran-Tank, François Bouvier",
+          href_ex: "https://www.circusdialogue.com/thinking-through-circus",
         },
       },
 
@@ -78,20 +82,6 @@ const db = {
         ticker: "working together",
         year_2021: {
           year: 2021,
-          writing: {
-            title: "Writing &c",
-            projects: {
-              caio: {
-                description:
-                  "“Critical approaches to improvisation in circus performance (and some examples): unpacking the ideological with a detour through dance studies” (forthcoming)",
-                href: "https://www.circusanditsothers.org/speakers-and-artists",
-              },
-              tohu: {
-                description:
-                  "Circus Dramaturgy in Canada: Problems of Technique” (forthcoming)",
-              },
-            },
-          },
           dramaturgy: {
             title: "Dramaturgical collaborations",
             projects: {
@@ -105,6 +95,23 @@ const db = {
           performer: {
             title: "Perfoming for others",
             projects: {},
+          },
+          web: {
+            title: "Web",
+            projects: {
+              acrobatetoimeme: {
+                description:
+                  "acrobatetoimeme.com- artist site for François Bouvier // design + development- Sebastian Kann",
+                href: "https://www.acrobatetoimeme.com/",
+                src: "/static/src/franky_img.png",
+              },
+              emilepineault: {
+                description:
+                  "emilepineault.com- artist site for Emile Pineault // design- Benjamin Jacques // development- Sebastian Kann",
+                href: "https://emilepineault.com/",
+                src: "/static/src/emile_img.png",
+              },
+            },
           },
         },
         year_2020: {

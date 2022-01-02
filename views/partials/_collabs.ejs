@@ -46,19 +46,20 @@
                    
 
                  
-                </a>
+                    
+                    <!-- if no link ... -->
+                    <% } else {%>
+                      <div class="credits credits-flex">
+                        <span>
+                          <%=thisProject.description%>
+                        </span>
+                      </div>
+                      
+                      <% } %>
+                      <img class="performance-img" src="<%=thisProject.src%>" alt="">
+                    </br>
+                  </a>
               </br>
-              
-              <!-- if no link ... -->
-              <% } else {%>
-                <div class="credits credits-flex">
-                  <span>
-                    <%=thisProject.description%>
-                  </span>
-                </div>
-              </br>
-              
-              <% } %>
               
             <% } %>
               
