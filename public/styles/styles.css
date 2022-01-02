@@ -229,11 +229,23 @@ div.year-box {
   background-color: #cccccc;
   opacity: 0.8;
 }
+div.show-box a:last-of-type img,
+div.year-box a:last-of-type img {
+  margin-bottom: -5px;
+}
 
-.performance-img {
+.works-img,
+.collab-img {
   max-width: 100%;
   border-radius: 0 0 5px 5px;
+}
+
+.works-img {
   margin-bottom: -5px;
+}
+
+.collab-img {
+  margin-bottom: 0.75rem;
 }
 
 .credits {

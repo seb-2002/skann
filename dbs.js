@@ -85,9 +85,14 @@ const db = {
           dramaturgy: {
             title: "Dramaturgical collaborations",
             projects: {
+              lowest_parts: {
+                description:
+                  "Emile Pineault // 'The Lowest Parts' (research phase)",
+                href: "https://emilepineault.com/projects/2022-the-lowest-parts/",
+              },
               chose_en_soi: {
                 description:
-                  "The Chita Project- Anna Kichtchenko and Pablo Prampano // 'La Chose en soi' (research/working title)",
+                  "The Chita Project- Anna Kichtchenko and Pablo Prampano // 'La Chose en soi' (research phase/working title)",
                 href: "https://www.facebook.com/thechitaproject/",
               },
             },
