@@ -51,7 +51,7 @@ const db = {
         always_beautiful: {
           title: "Always / Beautiful",
           ticker: "a/b",
-          year: 2019,
+          year: "creation 2019",
           src: "/static/src/ab_pic_1.jpg",
           credits:
             "creation- Natalie Oleinik + Sebastian Kann // dramaturgy- Ilse Ghekiere // lights- Bert van Dijck // rigging- Lee Harry Clayden // special thanks to- Hugo Mega, François Bouvier, Vera Tussing, Anneleen Keppens",
@@ -59,7 +59,7 @@ const db = {
 
         choreographing_touch: {
           title: "Choreographing Touch - Conversations",
-          year: "2021",
+          year: "podcast 2021",
           src: "/static/src/touch_pod_img.jpg",
           credits:
             "hosted by- Sebastian Kann + Vera Tussing // production, editing- Michael Picknett // image- Sarah Yu Zeebroek // with the participation of- Sarah van Lamsweerde, Alicia Hoost, Malik Nashad Sharpe, Salva Sanchis, Astrit Ismaili, Rebecca Goodine, Enric Granzotto Llagostera ",
@@ -69,7 +69,7 @@ const db = {
 
         thinking_through_circus: {
           title: "Thinking Through Circus",
-          year: "2020",
+          year: "publication 2020",
           src: "/static/src/ttc_img.png",
           credits:
             "edited by- Bauke Lievens, Sebastian Kann, Quintijn Ketels, Vincent Focquet (The Circus Dialogues) // with contributions by- Camille Paycha, Dana Dugan, Mardulier en Deprez, Francesca Hyde, Josef Stiller, Natalie Oleinik, Anna Tauber, Floor van Leeuwen, Iris Carta, Alexandre Fray, Aline Breucker, Fran-Tank, François Bouvier",
@@ -83,7 +83,7 @@ const db = {
         year_2021: {
           year: 2021,
           dramaturgy: {
-            title: "Dramaturgical collaborations",
+            title: "Studio dramaturgy",
             projects: {
               lowest_parts: {
                 description:
@@ -99,7 +99,18 @@ const db = {
           },
           performer: {
             title: "Perfoming for others",
-            projects: {},
+            projects: {
+              sarah_manya: {
+                description:
+                  "Montréal Danse research workshop 2021 // choreography- Sarah Manya // dance- Sebastian Kann + Erin Hill",
+                href: "https://montrealdanse.com/new2/",
+              },
+              nien_tzu: {
+                description:
+                  "Danse Cité Espace Recherche 2021-2022 // choreography - Nien Tzu Weng // performance- Nien Tzu Weng, Basile Herrmann Philippe, Sebastian Kann // sound design- Sebastian Kann",
+                href: "https://danse-cite.org/recherche-activites/espace-recherche",
+              },
+            },
           },
           web: {
             title: "Web",
@@ -123,17 +134,7 @@ const db = {
           year: 2020,
           writing: {
             title: "Writing &c",
-            projects: {
-              caio: {
-                description:
-                  "“Critical approaches to improvisation in circus performance (and some examples): unpacking the ideological with a detour through dance studies” (forthcoming)",
-                href: "https://www.circusanditsothers.org/speakers-and-artists",
-              },
-              tohu: {
-                description:
-                  "Circus Dramaturgy in Canada: Problems of Technique” (forthcoming)",
-              },
-            },
+            projects: {},
           },
           dramaturgy: {
             title: "Dramaturgical collaborations",
