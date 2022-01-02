@@ -112,18 +112,18 @@ app.get("/en/:menuItem", (req, res) => {
   res.render("category_page", templateVars);
 });
 
-app.get("/en/perf/:perf", (req, res) => {
-  const perf = req.params.perf;
+app.get("/en/works/:work", (req, res) => {
+  const work = req.params.work;
   if (req.session.history) {
-    req.session.history.push(`en/perf/${perf}`);
+    req.session.history.push(`en/works/${work}`);
   } else {
-    req.session.history = [`en/perf/${perf}`];
+    req.session.history = [`en/works/${work}`];
   }
   console.log(`User history: ${JSON.stringify(req.session.history)}`);
   const templateVars = {
-    perfData: db.en.menuItems.perf[perf],
+    workData: db.en.menuItems.works[work],
   };
-  res.render("perfs", templateVars);
+  res.render("work", templateVars);
 });
 
 app.get("/fr/:menuItem", (req, res) => {
@@ -140,16 +140,30 @@ app.get("/fr/:menuItem", (req, res) => {
   res.render("category_page", templateVars);
 });
 
-app.get("/fr/perf/:perf", (req, res) => {
-  const perf = req.params.perf;
+// app.get("/fr/works/:perf", (req, res) => {
+//   const perf = req.params.perf;
+//   if (req.session.history) {
+//     req.session.history.push(`fr/perf/${perf}`);
+//   } else {
+//     req.session.history = [`fr/perf/${perf}`];
+//   }
+//   console.log(`User history: ${JSON.stringify(req.session.history)}`);
+//   const templateVars = {
+//     perfData: db.fr.menuItems.perf[perf],
+//   };
+//   res.render("perfs", templateVars);
+// });
+
+app.get("/fr/works/:work", (req, res) => {
+  const work = req.params.work;
   if (req.session.history) {
-    req.session.history.push(`fr/perf/${perf}`);
+    req.session.history.push(`fr/works/${work}`);
   } else {
-    req.session.history = [`fr/perf/${perf}`];
+    req.session.history = [`fr/works/${work}`];
   }
   console.log(`User history: ${JSON.stringify(req.session.history)}`);
   const templateVars = {
-    perfData: db.fr.menuItems.perf[perf],
+    workData: db.fr.menuItems.works[work],
   };
-  res.render("perfs", templateVars);
+  res.render("work", templateVars);
 });

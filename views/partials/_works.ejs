@@ -1,0 +1,34 @@
+<% if (category.title==="Works" || category.title==="Création" ) { %>
+
+  <% for (let work in category) { %>
+
+    <% if (work !=="title" && work !=="ticker" && work !=="href" ) { %>
+
+      <div class="show-box">
+        <% if (category[work].href_ex) { %>
+          <a href="<%=category[work].href_ex%>">
+
+       <% } else { %>
+        <a href="<%=category.href%><%=work%>">
+
+      <%  } %>
+
+
+          <p>
+            <%=category[work].title%> (<%=category[work].year%>)&nbsp&nbsp&nbsp→
+          </p>
+        </a>
+        <p class="credits">
+          <%=category[work].credits%>
+        </p>
+        <img class="performance-img" src="<%=category[work].src%>" alt="">
+      </div>
+
+
+      <% } else { %>
+
+        <% } %>
+
+          <% } %>
+
+            <% } %>

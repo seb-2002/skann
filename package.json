@@ -8,7 +8,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx nodemon server.js"
+    "serve": "npx nodemon server.js",
+    "bundle": "browserify public/helpers/main.js > public/bundle.js",
+    "sass": "sass --watch public/styles/main.scss public/styles/styles.css"
   },
   "keywords": [],
   "author": "",
