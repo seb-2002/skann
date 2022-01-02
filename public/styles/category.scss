@@ -16,6 +16,7 @@ div.p-box,
 div.show-box,
 div.year-box {
   width: 90%;
+  max-width: $box-max-width;
   margin-bottom: 1.5rem;
   p {
     margin: 0;
@@ -30,9 +31,16 @@ div.p-box {
   }
 }
 
+div.show-box {
+  @include greyTheme;
+}
+
+div.year-box {
+  @include greyTheme($color: none);
+}
+
 div.show-box,
 div.year-box {
-  @include greyTheme;
   a:last-of-type {
     img {
       margin-bottom: -5px;
@@ -65,4 +73,17 @@ div.year-box {
 
 .link-arrow {
   font-size: $arrow-size;
+}
+
+.practice-box {
+  background-color: #cccccc;
+  border-radius: 5px;
+}
+
+.practice-title {
+  padding-top: $p;
+}
+
+.year-title {
+  font-size: 2rem;
 }

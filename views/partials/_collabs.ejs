@@ -10,7 +10,7 @@
       <div class="year-box">
         
         <!-- prints the year -->
-        <p>
+        <p class="year-title">
           <%=category[year].year%>
         </p>
         
@@ -22,10 +22,11 @@
           <%  if (thisPractice.projects && Object.keys(thisPractice.projects).length > 0) { %>
           
             <!-- print the title of the practice -->
-            <p>
+            <p class="practice-title">
               <%=thisPractice.title%>
             </p>
             
+            <div class="practice-box">
             <!-- loop through each project entry -->
             <% for (let project in thisPractice.projects) { %>
               <% let thisProject=thisPractice.projects[project] %>
@@ -62,7 +63,7 @@
               </br>
               
             <% } %>
-              
+              </div>
           <% } %>
 
         <% } %>

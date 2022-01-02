@@ -205,6 +205,7 @@ div.p-box,
 div.show-box,
 div.year-box {
   width: 90%;
+  max-width: 500px;
   margin-bottom: 1.5rem;
 }
 div.p-box p,
@@ -223,12 +224,18 @@ div.p-box .flex-container {
   align-items: center;
 }
 
-div.show-box,
-div.year-box {
+div.show-box {
   border-radius: 5px;
   background-color: #cccccc;
   opacity: 0.8;
 }
+
+div.year-box {
+  border-radius: 5px;
+  background-color: none;
+  opacity: 0.8;
+}
+
 div.show-box a:last-of-type img,
 div.year-box a:last-of-type img {
   margin-bottom: -5px;
@@ -258,6 +265,19 @@ div.year-box a:last-of-type img {
 }
 
 .link-arrow {
+  font-size: 2rem;
+}
+
+.practice-box {
+  background-color: #cccccc;
+  border-radius: 5px;
+}
+
+.practice-title {
+  padding-top: 1.5rem;
+}
+
+.year-title {
   font-size: 2rem;
 }
 
