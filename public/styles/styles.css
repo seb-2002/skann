@@ -150,7 +150,8 @@ div.button-box__flex {
   justify-content: space-between;
   width: 100%;
 }
-div.button-box .buttons-right {
+div.button-box .buttons-right,
+div.button-box .buttons-left {
   display: flex;
 }
 div.button-box .menu-button,
