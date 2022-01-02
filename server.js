@@ -54,7 +54,6 @@ app.get("/back", (req, res) => {
     if (historyLength > 1) {
       let lastIndex = req.session.history.length - 2;
       let lastPage = req.session.history[lastIndex];
-      console.log(lastPage);
       req.session.history.pop();
       req.session.history.pop();
       res.redirect(`/${lastPage}`);
@@ -89,7 +88,6 @@ app.get("/:lang", (req, res) => {
     } else {
       req.session.history = [lang];
     }
-    console.log(`User history: ${JSON.stringify(req.session.history)}`);
     const templateVars = {
       menuItems: db[lang].menuItems,
       lang,
@@ -105,7 +103,6 @@ app.get("/en/:menuItem", (req, res) => {
   } else {
     req.session.history = [`en/${menuItem}`];
   }
-  console.log(`User history: ${JSON.stringify(req.session.history)}`);
   const templateVars = {
     category: db.en.menuItems[menuItem],
   };
@@ -119,7 +116,6 @@ app.get("/en/works/:work", (req, res) => {
   } else {
     req.session.history = [`en/works/${work}`];
   }
-  console.log(`User history: ${JSON.stringify(req.session.history)}`);
   const templateVars = {
     workData: db.en.menuItems.works[work],
   };
@@ -133,26 +129,11 @@ app.get("/fr/:menuItem", (req, res) => {
   } else {
     req.session.history = [`fr/${menuItem}`];
   }
-  console.log(`User history: ${JSON.stringify(req.session.history)}`);
   const templateVars = {
     category: db.fr.menuItems[menuItem],
   };
   res.render("category_page", templateVars);
 });
-
-// app.get("/fr/works/:perf", (req, res) => {
-//   const perf = req.params.perf;
-//   if (req.session.history) {
-//     req.session.history.push(`fr/perf/${perf}`);
-//   } else {
-//     req.session.history = [`fr/perf/${perf}`];
-//   }
-//   console.log(`User history: ${JSON.stringify(req.session.history)}`);
-//   const templateVars = {
-//     perfData: db.fr.menuItems.perf[perf],
-//   };
-//   res.render("perfs", templateVars);
-// });
 
 app.get("/fr/works/:work", (req, res) => {
   const work = req.params.work;
@@ -161,7 +142,6 @@ app.get("/fr/works/:work", (req, res) => {
   } else {
     req.session.history = [`fr/works/${work}`];
   }
-  console.log(`User history: ${JSON.stringify(req.session.history)}`);
   const templateVars = {
     workData: db.fr.menuItems.works[work],
   };
