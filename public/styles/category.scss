@@ -64,10 +64,12 @@ div.year-box {
 
 .credits {
   font-size: $info-size;
-  color: $black;
   &-flex {
     display: flex;
     align-items: center;
+  }
+  &-works {
+    color: $black;
   }
 }
 

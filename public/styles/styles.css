@@ -258,11 +258,13 @@ div.year-box a:last-of-type img {
 
 .credits {
   font-size: 0.75rem;
-  color: black;
 }
 .credits-flex {
   display: flex;
   align-items: center;
+}
+.credits-works {
+  color: black;
 }
 
 .work-flex {
@@ -270,7 +272,7 @@ div.year-box a:last-of-type img {
 }
 
 .link-arrow {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .practice-box {
