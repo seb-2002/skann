@@ -2,6 +2,7 @@ const express = require("express");
 const compression = require("compression");
 const helmet = require("helmet");
 const session = require("express-session");
+const MemoryStore = require("memorystore")(session);
 const defaultLang = "en";
 const PORT = 8080;
 
@@ -12,7 +13,8 @@ const sess = {
   //   return genuuid(); // use UUIDs for session IDs
   // },
 
-  cookie: {},
+  cookie: { maxAge: 86400000 },
+  store: new MemoryStore({ checkPeriod: 86400000 }),
   secret: "circus",
   resave: false,
   saveUninitialized: true,
@@ -20,7 +22,7 @@ const sess = {
 
 const { db } = require("./dbs");
 const { redirect } = require("express/lib/response");
-const { MemoryStore } = require("express-session");
+// const { MemoryStore } = require("express-session");
 const req = require("express/lib/request");
 
 app.use(helmet());
@@ -44,6 +46,24 @@ app.listen(process.env.PORT || PORT, () => {
 
 app.get("/urls.json", (req, res) => {
   res.json(db);
+});
+
+app.get("/back", (req, res) => {
+  if (req.session.history) {
+    let historyLength = req.session.history.length;
+    if (historyLength > 1) {
+      let lastIndex = req.session.history.length - 2;
+      let lastPage = req.session.history[lastIndex];
+      console.log(lastPage);
+      req.session.history.pop();
+      req.session.history.pop();
+      res.redirect(`/${lastPage}`);
+    } else {
+      res.redirect("/");
+    }
+  } else {
+    res.redirect("/");
+  }
 });
 
 app.get("/", (req, res) => {

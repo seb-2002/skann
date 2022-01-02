@@ -22,7 +22,7 @@ function setLang(thisLang, url) {
 
 const backButton = `
     
-    <form id="backForm" method="GET">
+    <form id="backForm" method="GET" action="/back">
       <button type="button submit" class="menu-button menu-button__cat" id="backButton">
         <p id="backButton"> ⬅ </p>
       </button>
@@ -31,7 +31,7 @@ const backButton = `
   `;
 
 function appendBackButton(html) {
-  let buttonBox = document.getElementById("button-box__home");
+  let buttonBox = document.getElementById("button-box__back");
   let priorContent = buttonBox.innerHTML;
   buttonBox.innerHTML = html + priorContent;
   // document.getElementById("button-box__flex").innerHTML += html;
