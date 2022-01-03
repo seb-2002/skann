@@ -270,6 +270,7 @@ div.year-box a:last-of-type img {
 
 .work-flex {
   align-items: center;
+  justify-content: space-between;
 }
 
 .link-arrow {
