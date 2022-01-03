@@ -262,6 +262,7 @@ div.year-box a:last-of-type img {
 .credits-flex {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .credits-works {
   color: black;
@@ -275,6 +276,18 @@ div.year-box a:last-of-type img {
   font-size: 1.5rem;
 }
 
+.agenda-box {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.info-box {
+  background-color: #cccccc;
+  border-radius: 5px;
+  flex-grow: 2;
+}
+
 .practice-box {
   background-color: #cccccc;
   border-radius: 5px;
@@ -286,6 +299,15 @@ div.year-box a:last-of-type img {
 
 .year-title {
   font-size: 2rem;
+}
+
+.dates {
+  transform: rotate(-45deg);
+}
+
+.date-box {
+  margin-right: 1rem;
+  min-width: 3rem;
 }
 
 .ticker-wrap {

@@ -1,6 +1,6 @@
 <!-- theory and practice page -->
 
-<% if (category.title==="Collaborations" || category.title==="Collaboration" ) { %>
+<% if (category.title==="Collaborations" || category.title==="Collaboration" || category.title==="Teaching" || category.title==="Pédagogie" ) { %>
 
   <% for (let year in category) { %>
     
@@ -34,11 +34,17 @@
               <!-- check if there is a link -->
               <% if (thisProject.href) { %>
                 <a href="<%=thisProject.href%>">
-                 
-                    <div class="credits credits-flex">
-                      <span class="no-text-decoration">
-                        <%=thisProject.description%>
-                      </span>
+                  <div class="credits-flex">
+                    <div class="flex-column">
+                  <p class="teaching-title no-text-decoration">
+                    <%=thisProject.title%>
+                  </p>
+                  
+                    <p class="credits no-text-decoration">
+                      <%=thisProject.description%>
+                    </p>
+                  
+                      </div>
                         <span class="link-arrow">
                           &nbsp&nbsp&nbsp⮕
                         </span>
@@ -50,6 +56,9 @@
                     
                     <!-- if no link ... -->
                     <% } else {%>
+                      <p class="teaching-title">
+                        <%=thisProject.title%>
+                      </p>
                       <div class="credits credits-flex">
                         <span>
                           <%=thisProject.description%>

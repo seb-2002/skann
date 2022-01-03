@@ -86,13 +86,14 @@ const db = {
             title: "Studio dramaturgy",
             projects: {
               lowest_parts: {
-                description:
-                  "Emile Pineault // 'The Lowest Parts' (research phase)",
+                title: "The Lowest Parts",
+                description: "Emile Pineault (research phase)",
                 href: "https://emilepineault.com/projects/2022-the-lowest-parts/",
               },
               chose_en_soi: {
+                title: "La chose en soi (working title)",
                 description:
-                  "The Chita Project- Anna Kichtchenko and Pablo Prampano // 'La Chose en soi' (research phase/working title)",
+                  "The Chita Project // Anna Kichtchenko and Pablo Prampano (research phase/working title)",
                 href: "https://www.facebook.com/thechitaproject/",
               },
             },
@@ -101,13 +102,15 @@ const db = {
             title: "Perfoming for others",
             projects: {
               sarah_manya: {
+                title: "Montréal Danse research workshop",
                 description:
-                  "Montréal Danse research workshop 2021 // choreography- Sarah Manya // dance- Sebastian Kann + Erin Hill",
+                  "choreography- Sarah Manya // dance- Sebastian Kann + Erin Hill",
                 href: "https://montrealdanse.com/new2/",
               },
               nien_tzu: {
+                title: "Danse Cité Espace Recherche",
                 description:
-                  "Danse Cité Espace Recherche 2021-2022 // choreography - Nien Tzu Weng // performance- Nien Tzu Weng, Basile Herrmann Philippe, Sebastian Kann // sound design- Sebastian Kann",
+                  "choreography - Nien Tzu Weng // performance- Nien Tzu Weng, Basile Herrmann Philippe, Sebastian Kann // sound design- Sebastian Kann",
                 href: "https://danse-cite.org/recherche-activites/espace-recherche",
               },
             },
@@ -116,14 +119,16 @@ const db = {
             title: "Web",
             projects: {
               acrobatetoimeme: {
+                title: "acrobatetoimeme.com",
                 description:
-                  "acrobatetoimeme.com- artist site for François Bouvier // design + development- Sebastian Kann",
+                  "artist site for François Bouvier // design + development- Sebastian Kann",
                 href: "https://www.acrobatetoimeme.com/",
                 src: "/static/src/franky_img.png",
               },
               emilepineault: {
+                title: "emilepineault.com",
                 description:
-                  "emilepineault.com- artist site for Emile Pineault // design- Benjamin Jacques // development- Sebastian Kann",
+                  "artist site for Emile Pineault // design- Benjamin Jacques // development- Sebastian Kann",
                 href: "https://emilepineault.com/",
                 src: "/static/src/emile_img.png",
               },
@@ -150,16 +155,61 @@ const db = {
       pgogy: {
         title: "Teaching",
         ticker: "teaching",
+        year_2022: {
+          year: 2022,
+          theory: {
+            title: "Theory",
+            projects: {
+              innovating_circus_technique: {
+                title: "Innovating circus technique",
+                description: "A weekly seminar for DEC students @ ENC",
+              },
+            },
+          },
+          Practice: {
+            title: "Studio practice",
+            projects: {
+              artistic_counseling: {
+                title: "Artistic Counselor @ ENC",
+              },
+            },
+          },
+          performer: {
+            title: "Perfoming for others",
+            projects: {},
+          },
+        },
       },
 
       agenda: {
         title: "Dates",
         ticker: "dates",
+        year_2022: {
+          year: 2022,
+          innovating_circus_technique: {
+            type: "teaching",
+            type_href: "/en/pgogy",
+            title: "Innovating circus technique",
+            dates: "jan-apr",
+            institution: "ENC",
+            institution_href: "www.enc.qc.ca",
+            place: "Montréal / Tiohtiá:ke",
+          },
+          imgss: {
+            type: "residency",
+            type_href: "/en/collab",
+            title: "I miss grandma so Sad",
+            dates: "22-28aug",
+            institution: "La Chapelle",
+            institution_href:
+              "https://lachapelle.org/fr/programmation/residence",
+            place: "Montréal / Tiohtiá:ke",
+          },
+        },
       },
-
       web: {
-        title: "Links",
-        ticker: "links",
+        title: "Liens",
+        ticker: "web",
       },
 
       contact: {

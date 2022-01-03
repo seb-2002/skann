@@ -1,0 +1,66 @@
+<!-- theory and practice page -->
+
+<% if (category.title==="Dates" || category.title==="Agenda" ) { %>
+
+  <% for (let year in category) { %>
+
+    <!-- each year box starts here  -->
+    <% if (year !=="title" && year !=="ticker" ) { %>
+
+      <div class="year-box">
+
+        <!-- prints the year -->
+        <p class="year-title">
+          <%=category[year].year%>
+        </p>
+
+        <% for (let eng in category[year]) { %>
+          <% if (eng !== "year") { %>
+          <% let thisEng=category[year][eng] %>
+          <div class="agenda-box flex">
+
+            <div class="date-box">
+              <p class="dates credits">
+
+                <%=thisEng.dates%>
+              </p>
+            </div>
+            <div class="info-box">
+              <p class="agenda-title">
+                <%=thisEng.title%>
+              </p>
+              <p class="agenda-info credits">
+           
+                <a href="<%=thisEng.institution_href%>">
+
+                  <span class="eng-inst with_comma">
+                    @<%=thisEng.institution%>,
+                  </span>
+                </a>
+                <span class="eng-place">
+                  <%=thisEng.place%>
+                </span>
+              </p>
+                <p class="eng-type">
+                  <a href="<%=thisEng.type_href%>">
+
+                    <span class="credits eng-type">
+                      #<%=thisEng.type%>
+                    </span>
+                  </a>
+              </p>
+            </div>
+          </div>
+
+        <%  } %>
+      <%  } %>
+
+    </div>
+            
+  <% }%>
+            
+<% } %>
+          
+<% } %>
+
+      

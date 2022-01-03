@@ -67,6 +67,7 @@ div.year-box {
   &-flex {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   &-works {
     color: $black;
@@ -81,6 +82,17 @@ div.year-box {
   font-size: $arrow-size;
 }
 
+.agenda-box {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $box-margin-bottom;
+}
+
+.info-box {
+  background-color: $beige;
+  border-radius: 5px;
+  flex-grow: 2;
+}
 .practice-box {
   background-color: #cccccc;
   border-radius: 5px;
@@ -92,4 +104,13 @@ div.year-box {
 
 .year-title {
   font-size: 2rem;
+}
+
+.dates {
+  transform: rotate($dates-angle);
+}
+
+.date-box {
+  margin-right: $date-box-margin;
+  min-width: 3rem;
 }
