@@ -2,85 +2,90 @@
 
 <% if (category.title==="Collaborations" || category.title==="Collaboration" || category.title==="Teaching" || category.title==="Pédagogie" ) { %>
 
-  <% for (let year in category) { %>
-    
-    <!-- each year box starts here  -->
-    <% if (year !=="title" && year !=="ticker" ) { %>
+<% for (let year in category) { %>
 
-      <div class="year-box">
-        
-        <!-- prints the year -->
-        <p class="year-title">
-          <%=category[year].year%>
-        </p>
-        
-        <!-- loop through each practice ... -->
-        <% for (let practice in category[year]) { %>
-          <%let thisPractice=category[year][practice]%>
-          
-          <!--check for projects entries  -->
-          <%  if (thisPractice.projects && Object.keys(thisPractice.projects).length > 0) { %>
-          
-            <!-- print the title of the practice -->
-            <p class="practice-title">
-              <%=thisPractice.title%>
-            </p>
-            
-            <div class="practice-box">
-            <!-- loop through each project entry -->
-            <% for (let project in thisPractice.projects) { %>
-              <% let thisProject=thisPractice.projects[project] %>
-              
-              <!-- check if there is a link -->
-              <% if (thisProject.href) { %>
-                <a href="<%=thisProject.href%>">
-                  <div class="credits-flex">
-                    <div class="flex-column">
-                  <p class="teaching-title no-text-decoration">
-                    <%=thisProject.title%>
-                  </p>
-                  
-                    <p class="credits no-text-decoration">
-                      <%=thisProject.description%>
-                    </p>
-                  
-                      </div>
-                        <span class="link-arrow">
-                          &nbsp&nbsp&nbsp⮕
-                        </span>
-                    </div>
-                        
-                   
+<!-- each year box starts here  -->
+<% if (year !=="title" && year !=="ticker" ) { %>
 
-                 
-                    
-                    <!-- if no link ... -->
-                    <% } else {%>
-                      <p class="teaching-title">
-                        <%=thisProject.title%>
-                      </p>
-                      <div class="credits credits-flex">
-                        <span>
-                          <%=thisProject.description%>
-                        </span>
-                      </div>
-                      
-                      <% } %>
-                      <img class="collab-img" src="<%=thisProject.src%>" alt="">
-                    
-                  </a>
-              </br>
-              
-            <% } %>
-              </div>
-          <% } %>
+<div class="year-box">
 
-        <% } %>
+  <!-- prints the year -->
+  <p class="year-title">
+    <%=category[year].year%>
+  </p>
 
+  <!-- loop through each practice ... -->
+  <% for (let practice in category[year]) { %>
+  <%let thisPractice=category[year][practice]%>
+
+  <!--check for projects entries  -->
+  <%  if (thisPractice.projects && Object.keys(thisPractice.projects).length > 0) { %>
+
+  <!-- print the title of the practice -->
+  <p class="practice-title">
+    <%=thisPractice.title%>
+  </p>
+
+  <div class="practice-box">
+    <!-- loop through each project entry -->
+    <% for (let project in thisPractice.projects) { %>
+    <% let thisProject=thisPractice.projects[project] %>
+
+    <!-- check if there is a link -->
+    <% if (thisProject.href) { %>
+    <a href="<%=thisProject.href%>">
+      <div class="credits-flex">
+        <div class="flex-column">
+          <p class="teaching-title no-text-decoration">
+            <%=thisProject.title%>
+          </p>
+
+          <p class="credits no-text-decoration">
+            <%=thisProject.description%>
+          </p>
+
+        </div>
+        <span class="link-arrow">
+          &nbsp&nbsp&nbsp⮕
+        </span>
       </div>
 
-    <% }%>
+
+
+
+
+      <!-- if no link ... -->
+      <% } else {%>
+      <p class="teaching-title">
+        <%=thisProject.title%>
+      </p>
+      <div class="credits credits-flex">
+        <span>
+          <%=thisProject.description%>
+        </span>
+      </div>
+
+      <% } %>
+      <% if (thisProject.src) { %>
+
+      <img class="collab-img" src="<%=thisProject.src%>" alt="">
+
+      <% } %>
+
+
+    </a>
+
+
+    <% } %>
+  </div>
+  <% } %>
 
   <% } %>
+
+</div>
+
+<% }%>
+
+<% } %>
 
 <% } %>

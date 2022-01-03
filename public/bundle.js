@@ -67,6 +67,30 @@ module.exports = {
 };
 
 },{}],2:[function(require,module,exports){
+function copyText() {
+  const copy = document.getElementById("email").innerHTML;
+  navigator.clipboard.writeText(copy);
+
+  const tooltip = document.getElementById("tooltip-text");
+  tooltip.innerHTML = "Copied!";
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("tooltip-text");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+
+function assignCopyButtonBehaviour(id) {
+  const contactButton = document.getElementById(id);
+  contactButton.onclick = () => copyText();
+  contactButton.onmouseout = () => outFunc();
+}
+
+module.exports = {
+  assignCopyButtonBehaviour,
+};
+
+},{}],3:[function(require,module,exports){
 function generateColorValues() {
   const randomSat = Math.random() * 100;
   const randomSat2 = Math.random() * 100;
@@ -86,7 +110,7 @@ module.exports = {
   generateColorValues,
 };
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 function isMobile() {
   let width = screen.width;
   if (width >= 540) {
@@ -98,7 +122,7 @@ function isMobile() {
 
 module.exports = { isMobile };
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 const { generateObjectPositions } = require("./scatterMenu");
 const {
   getLang,
@@ -110,6 +134,7 @@ const {
 const { generateColorValues } = require("./handleColors");
 const { shrinkTitle } = require("./title");
 const { isMobile } = require("./handleResponsivity");
+const { assignCopyButtonBehaviour } = require("./copy");
 
 function handleFunction() {
   let { thisLang, url } = getLang();
@@ -118,6 +143,7 @@ function handleFunction() {
   // setBackAction(url, backButton);
   generateColorValues();
   shrinkTitle();
+  assignCopyButtonBehaviour("contact-button");
   if (!isMobile()) {
     generateObjectPositions("menu-box", 75, 5);
   }
@@ -127,7 +153,7 @@ window.onload = (e) => {
   handleFunction();
 };
 
-},{"./buttons":1,"./handleColors":2,"./handleResponsivity":3,"./scatterMenu":5,"./title":6}],5:[function(require,module,exports){
+},{"./buttons":1,"./copy":2,"./handleColors":3,"./handleResponsivity":4,"./scatterMenu":6,"./title":7}],6:[function(require,module,exports){
 const countHTMLObjectsByClass = (className) => {
   let HTMLObjects = document.getElementsByClassName(className);
   return HTMLObjects.length;
@@ -196,7 +222,7 @@ module.exports = {
   generateObjectPositions,
 };
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 function shrinkTitle() {
   let url = window.location.pathname;
   if (url.length > 4) {
@@ -206,4 +232,4 @@ function shrinkTitle() {
 
 module.exports = { shrinkTitle };
 
-},{}]},{},[4]);
+},{}]},{},[5]);

@@ -31,8 +31,18 @@ div.p-box {
   }
 }
 
-div.show-box {
+div.show-box,
+div.contact-box {
   @include greyTheme;
+}
+
+.content-box {
+  position: relative;
+}
+
+.contact-box {
+  position: relative;
+  margin-top: 4rem;
 }
 
 div.year-box {
@@ -60,6 +70,7 @@ div.year-box {
 
 .collab-img {
   margin-bottom: $info-size;
+  margin-top: -$info-size;
 }
 
 .credits {
@@ -68,6 +79,7 @@ div.year-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: $info-size;
   }
   &-works {
     color: $black;
@@ -114,4 +126,42 @@ div.year-box {
 .date-box {
   margin-right: $date-box-margin;
   min-width: 3rem;
+}
+
+.contact-text {
+  font-weight: normal;
+  margin: 0;
+}
+
+.contact-box:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-text {
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
 }

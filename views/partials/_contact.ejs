@@ -1,0 +1,11 @@
+<% if (category.title === "Contact") { %>
+<div class="contact-box">
+  <button id="contact-button" class="contact-button">
+    <h2 class="contact-text"><span id="email">
+        <%= category.address %>
+      </span>
+    </h2>
+    <span id="tooltip-text" class="tooltip-text">Copy to clipboard</span>
+  </button>
+</div>
+<% } %>

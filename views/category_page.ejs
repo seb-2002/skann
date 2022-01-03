@@ -7,7 +7,7 @@
     <div class="ticker">
       <% for (let i = 0; i < 20; i++) { %>
 
-        <div class="ticker__item"> <%=category.ticker%> </div>
+      <div class="ticker__item"> <%=category.ticker%> </div>
 
       <% } %>
     </div>
@@ -16,14 +16,14 @@
   <!-- content box -->
   <div class="content-box">
 
-  <!-- bio page -->
-  
-  <%- include ('partials/_bio.ejs') %>
+    <!-- bio page -->
+
+    <%- include ('partials/_bio.ejs') %>
 
     <!-- performances page -->
 
     <%- include ('partials/_works.ejs') %>
-    
+
 
     <!-- theory and practice page -->
 
@@ -32,38 +32,40 @@
     <!-- teaching page -->
 
     <%- include ('partials/_dates.ejs') %>
+    <!-- contact page -->
 
-  <!--end content box  -->
+    <%- include ('partials/_contact.ejs') %>
+
+    <!--end content box  -->
   </div>
-<!-- end category-body-->
+  <!-- end category-body-->
 </div>
 
 <!-- language button  -->
-<div id="button-box"class="button-box button-box__cat">
-  <div class="button-box__flex flex" >
+<div id="button-box" class="button-box button-box__cat">
+  <div class="button-box__flex flex">
     <div id="button-box__back" class="buttons-left">
-        <form id="backForm" method="GET" action="/back">
-          <button type="button submit" class="menu-button menu-button__cat" id="backButton">
-            <p id="backButton"> ⬅ </p>
-          </button>
-        </form>
-            <form id="homeButton" method="GET">
-              <button class="menu-button menu-button__home menu-button__cat" type="button submit">
-                <p id="">🏠</p>
-              </button>
-            </form>
+      <form id="backForm" method="GET" action="/back">
+        <button type="button submit" class="menu-button menu-button__cat" id="backButton">
+          <p id="backButton"> ⬅ </p>
+        </button>
+      </form>
+      <form id="homeButton" method="GET">
+        <button class="menu-button menu-button__home menu-button__cat" type="button submit">
+          <p id="">🏠</p>
+        </button>
+      </form>
     </div>
-    
+
     <div class="buttons-right">
-  
+
       <form id="langForm" method="GET">
         <button class="menu-button menu-button__lang menu-button__cat" type="button submit">
           <p id="langButton"></p>
         </button>
       </form>
     </div>
-</div>
+  </div>
 
 
-<%- include ('partials/_foot.ejs') %>
-
+  <%- include ('partials/_foot.ejs') %>

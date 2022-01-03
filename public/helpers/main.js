@@ -9,6 +9,7 @@ const {
 const { generateColorValues } = require("./handleColors");
 const { shrinkTitle } = require("./title");
 const { isMobile } = require("./handleResponsivity");
+const { assignCopyButtonBehaviour } = require("./copy");
 
 function handleFunction() {
   let { thisLang, url } = getLang();
@@ -17,6 +18,7 @@ function handleFunction() {
   // setBackAction(url, backButton);
   generateColorValues();
   shrinkTitle();
+  assignCopyButtonBehaviour("contact-button");
   if (!isMobile()) {
     generateObjectPositions("menu-box", 75, 5);
   }

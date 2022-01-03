@@ -16,13 +16,19 @@
 
           <p>
             <div class="flex work-flex">
-            <span><%=category[work].title%> (<%=category[work].year%>)</span><span class="link-arrow">&nbsp&nbsp&nbsp⮕</span>
+              <div class="flex-column">
+                <span><%=category[work].title%> (<%=category[work].year%>)</span>
+                <p class="credits credits-works">
+                  <%=category[work].credits%>
+                </p>
+
+              </div>
+            <span class="link-arrow">&nbsp&nbsp&nbsp⮕</span>
             </div>
           </p>
-          <p class="credits credits-works">
-            <%=category[work].credits%>
-          </p>
-          <img class="works-img" src="<%=category[work].src%>" alt="">
+          <% if (category[work].src) { %>
+            <img class="works-img" src="<%=category[work].src%>" alt="">
+         <% } %>
         </a>
       </div>
 

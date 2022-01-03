@@ -1,6 +1,7 @@
 button {
   border: none;
   background-color: $beige;
+  cursor: pointer;
   &.menu-button {
     width: 100%;
     text-align: left;
@@ -8,6 +9,9 @@ button {
   }
   &.home-button {
     background: transparent;
+  }
+  &.contact-button {
+    border-radius: $box-radius;
   }
 }
 
