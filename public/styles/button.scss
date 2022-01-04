@@ -72,8 +72,21 @@ div.button-box {
     p {
       font-size: $p;
       margin: 0;
-
-      // padding: .5*$p;
     }
+  }
+}
+
+@media screen and (min-width: 540px) {
+  div.button-box .menu-button {
+    margin-left: $nav-button-margin;
+    margin-bottom: 2 * $nav-button-margin;
+  }
+  button.home-button {
+    margin-right: $nav-button-margin;
+    transform: translateX(50%) rotate(-90deg) translateX(25%) translateY(-50%);
+  }
+
+  div.button-box .menu-button__lang {
+    margin-right: $nav-button-margin;
   }
 }

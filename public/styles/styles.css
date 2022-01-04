@@ -215,6 +215,21 @@ div.button-box .back-button p {
   margin: 0;
 }
 
+@media screen and (min-width: 540px) {
+  div.button-box .menu-button {
+    margin-left: 16px;
+    margin-bottom: 32px;
+  }
+
+  button.home-button {
+    margin-right: 16px;
+    transform: translateX(50%) rotate(-90deg) translateX(25%) translateY(-50%);
+  }
+
+  div.button-box .menu-button__lang {
+    margin-right: 16px;
+  }
+}
 .category-body,
 .content-box {
   display: flex;
