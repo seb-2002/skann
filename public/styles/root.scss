@@ -4,7 +4,10 @@ div.title-box {
   display: flex;
   width: 100%;
   justify-content: end;
-  // z-index: 2;
+  transform: translateY(300%);
+  animation: titleIn 3s ease-out 2s;
+  animation-fill-mode: forwards;
+
   h1 {
     font-weight: normal;
     font-size: 2.5rem;

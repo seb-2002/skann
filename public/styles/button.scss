@@ -36,6 +36,11 @@ div.button-box {
     justify-content: space-between;
     width: 100%;
   }
+  &__animate {
+    transform: translateY(300%);
+    animation: titleIn 3s ease-out 2s;
+    animation-fill-mode: forwards;
+  }
 
   .buttons-right,
   .buttons-left {

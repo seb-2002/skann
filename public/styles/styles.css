@@ -20,6 +20,14 @@
     transform: translate3d(-100%, 0, 0);
   }
 }
+@keyframes titleIn {
+  0% {
+    transform: translateY(300%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 h1, h2, p {
   font-family: serif;
 }
@@ -68,6 +76,9 @@ div.title-box {
   display: flex;
   width: 100%;
   justify-content: end;
+  transform: translateY(300%);
+  animation: titleIn 3s ease-out 2s;
+  animation-fill-mode: forwards;
 }
 div.title-box h1 {
   font-weight: normal;
@@ -162,6 +173,11 @@ div.button-box__flex {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+div.button-box__animate {
+  transform: translateY(300%);
+  animation: titleIn 3s ease-out 2s;
+  animation-fill-mode: forwards;
 }
 div.button-box .buttons-right,
 div.button-box .buttons-left {
