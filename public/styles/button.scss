@@ -38,7 +38,7 @@ div.button-box {
   }
   &__animate {
     transform: translateY(300%);
-    animation: titleIn 3s ease-out 2s;
+    animation: titleIn 3s ease-out 1s;
     animation-fill-mode: forwards;
   }
 
