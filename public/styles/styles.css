@@ -215,14 +215,16 @@ div.button-box .back-button p {
 
 div.p-box,
 div.show-box,
-div.year-box {
+div.year-box,
+div.link-type-box {
   width: 90%;
   max-width: 500px;
   margin-bottom: 1.5rem;
 }
 div.p-box p,
 div.show-box p,
-div.year-box p {
+div.year-box p,
+div.link-type-box p {
   margin: 0;
 }
 
@@ -252,7 +254,8 @@ div.contact-box {
   margin-top: 4rem;
 }
 
-div.year-box {
+div.year-box,
+.link-type-box {
   border-radius: 5px;
   background-color: none;
   opacity: 0.8;
@@ -312,7 +315,8 @@ div.year-box a:last-of-type img {
   flex-grow: 2;
 }
 
-.practice-box {
+.practice-box,
+.links-box {
   background-color: #cccccc;
   border-radius: 5px;
 }

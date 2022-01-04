@@ -14,7 +14,8 @@
 
 div.p-box,
 div.show-box,
-div.year-box {
+div.year-box,
+div.link-type-box {
   width: 90%;
   max-width: $box-max-width;
   margin-bottom: 1.5rem;
@@ -45,7 +46,8 @@ div.contact-box {
   margin-top: 4rem;
 }
 
-div.year-box {
+div.year-box,
+.link-type-box {
   @include greyTheme($color: none);
 }
 
@@ -106,7 +108,8 @@ div.year-box {
   border-radius: 5px;
   flex-grow: 2;
 }
-.practice-box {
+.practice-box,
+.links-box {
   background-color: #cccccc;
   border-radius: 5px;
 }

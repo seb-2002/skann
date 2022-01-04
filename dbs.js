@@ -208,8 +208,20 @@ const db = {
         },
       },
       web: {
-        title: "Liens",
+        title: "Links",
         ticker: "web",
+
+        collaborators: {
+          type: "Collaborators",
+          Natalie: {
+            label: "Natalie Oleinik",
+            href: "https://vimeo.com/noleinik?embedded=true&source=owner_name&owner=3322502",
+          },
+          Vera: {
+            label: "Vera Tussing",
+            href: "https://www.veratussing.com/",
+          },
+        },
       },
 
       contact: {

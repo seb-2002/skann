@@ -1,0 +1,37 @@
+<% if (category.title==="Links" || category.title==="Liens") { %>
+
+<div class="link-type-box">
+
+  <% for (let type in category) { %>
+  <% if (type !== "title" && type !== "ticker") { %>
+
+  <% let thisType = category[type] %>
+  <p class="practice-title">
+    <%= thisType.type %>
+
+  </p>
+  <div class="links-box">
+
+    <% for (let label in thisType) { %>
+
+    <% let thisLabel = thisType[label].label %>
+    <% let thisHref = thisType[label].href %>
+    <p>
+
+      <a href="<%= thisHref %> ">
+        <%= thisLabel %>
+      </a>
+    </p>
+    <% } %>
+  </div>
+  <% } %>
+  <% } %>
+
+
+</div>
+
+
+
+
+
+<% } %>
