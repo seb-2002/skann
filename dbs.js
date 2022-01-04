@@ -210,7 +210,6 @@ const db = {
       web: {
         title: "Links",
         ticker: "web",
-
         collaborators: {
           type: "Collaborators",
           Natalie: {
@@ -221,6 +220,21 @@ const db = {
             label: "Vera Tussing",
             href: "https://www.veratussing.com/",
           },
+        },
+        residencies: {
+          type: "Residencies",
+        },
+        resources: {
+          type: "Resources",
+        },
+        presenters: {
+          type: "Presenters",
+        },
+        schools: {
+          type: "Schools",
+        },
+        funding: {
+          type: "Funding",
         },
       },
 
