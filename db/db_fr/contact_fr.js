@@ -1,7 +1,7 @@
 const contact_fr = {
   lang: "fr",
   title: "Contact",
-  ticker: "@",
+  ticker: "cliquez pour copier",
   address: "sebastiankann@gmail.com",
 };
 module.exports = {

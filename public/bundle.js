@@ -100,8 +100,19 @@ function assignCopyButtonBehaviour(id) {
   }
 }
 
+function changeTickerTape(url, newTicker) {
+  let thisUrl = window.location.pathname;
+  if (thisUrl === url) {
+    let tickerItemList = document.getElementsByClassName("ticker__item");
+    for (const tickerItem of tickerItemList) {
+      tickerItem.innerHTML = newTicker;
+    }
+  }
+}
+
 module.exports = {
   assignCopyButtonBehaviour,
+  changeTickerTape,
 };
 
 },{}],3:[function(require,module,exports){
@@ -148,7 +159,7 @@ const {
 const { generateColorValues } = require("./handleColors");
 const { shrinkTitle } = require("./title");
 const { isMobile } = require("./handleResponsivity");
-const { assignCopyButtonBehaviour } = require("./copy");
+const { assignCopyButtonBehaviour, changeTickerTape } = require("./copy");
 
 function handleFunction() {
   let { thisLang, url } = getLang();
@@ -160,6 +171,8 @@ function handleFunction() {
   assignCopyButtonBehaviour("contact-button");
   if (!isMobile()) {
     generateObjectPositions("menu-box", 75, 5);
+    changeTickerTape("/en/contact", "@");
+    changeTickerTape("/fr/contact", "@");
   }
 }
 

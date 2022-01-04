@@ -9,7 +9,7 @@ const {
 const { generateColorValues } = require("./handleColors");
 const { shrinkTitle } = require("./title");
 const { isMobile } = require("./handleResponsivity");
-const { assignCopyButtonBehaviour } = require("./copy");
+const { assignCopyButtonBehaviour, changeTickerTape } = require("./copy");
 
 function handleFunction() {
   let { thisLang, url } = getLang();
@@ -21,6 +21,8 @@ function handleFunction() {
   assignCopyButtonBehaviour("contact-button");
   if (!isMobile()) {
     generateObjectPositions("menu-box", 75, 5);
+    changeTickerTape("/en/contact", "@");
+    changeTickerTape("/fr/contact", "@");
   }
 }
 

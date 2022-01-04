@@ -1,7 +1,7 @@
 const contact_en = {
   lang: "en",
   title: "Contact",
-  ticker: "@",
+  ticker: "click to copy",
   address: "sebastiankann@gmail.com",
 };
 

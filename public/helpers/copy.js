@@ -31,6 +31,17 @@ function assignCopyButtonBehaviour(id) {
   }
 }
 
+function changeTickerTape(url, newTicker) {
+  let thisUrl = window.location.pathname;
+  if (thisUrl === url) {
+    let tickerItemList = document.getElementsByClassName("ticker__item");
+    for (const tickerItem of tickerItemList) {
+      tickerItem.innerHTML = newTicker;
+    }
+  }
+}
+
 module.exports = {
   assignCopyButtonBehaviour,
+  changeTickerTape,
 };
