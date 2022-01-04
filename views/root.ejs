@@ -1,47 +1,39 @@
 <!-- //templateVars==menuItems -->
 
 
-<%- include ('partials/_head.ejs') %>  
+<%- include ('partials/_head.ejs') %>
 
 
 <div class="flex-box">
-<% let index = 1 %>
-<% for (let item in menuItems) { %>
+  <% let index = 1 %>
+  <% for (let item in menuItems) { %>
+  <% if (!menuItems[item].isHidden) { %>
+
   <div class="menu-box menu-box-<%= index %>">
-  <form method="GET" action="/<%=lang%>/<%=item%>">
-    <button type="button submit" class="menu-button">
-      <h2 class="menu-text">
-        <%= menuItems[item].title %>
-      </h2>
-    </button>
-  </form>
-</div>
-  
-  <!-- <p><%= menuItems[item].title %></p> -->
+    <form method="GET" action="/<%=lang%>/<%=item%>">
+      <button type="button submit" class="menu-button">
+        <h2 class="menu-text">
+          <%= menuItems[item].title %>
+        </h2>
+      </button>
+    </form>
+  </div>
   <% index ++ %>
+  <% } %>
+
+  <!-- <p><%= menuItems[item].title %></p> -->
   <% } %>
 
 </div>
 
-      <div id="button-box"class="button-box">
-        <div >
-          <form id="langForm" method="GET">
-            <button class="menu-button" type="button submit" >
-              <p id="langButton"></p>
-            </button>
-          </form>
-        </div>
-      </div>
-  
-  <%- include ('partials/_foot.ejs') %>  
+<div id="button-box" class="button-box">
+  <div>
+    <form id="langForm" method="GET">
+      <button class="menu-button" type="button submit">
+        <p id="langButton"></p>
+      </button>
+    </form>
+  </div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
+<%- include ('partials/_foot.ejs') %>

@@ -20,7 +20,7 @@ const sess = {
   saveUninitialized: true,
 };
 
-const { db } = require("./dbs");
+const { db } = require("./db/dbs");
 const { redirect } = require("express/lib/response");
 // const { MemoryStore } = require("express-session");
 const req = require("express/lib/request");

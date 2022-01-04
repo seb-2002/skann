@@ -44,8 +44,10 @@ const assignStyles = (className, posArray1, posArray2) => {
   let howManyObjects = countHTMLObjectsByClass(className);
   for (i = 1; i <= posArray1.length; i++) {
     let thisElm = document.getElementsByClassName(`${className}-${i}`)[0];
-    thisElm.style.top = `${posArray1[i - 1]}%`;
-    thisElm.style.left = `${posArray2[i - 1]}%`;
+    if (thisElm) {
+      thisElm.style.top = `${posArray1[i - 1]}%`;
+      thisElm.style.left = `${posArray2[i - 1]}%`;
+    }
   }
   return;
 };
