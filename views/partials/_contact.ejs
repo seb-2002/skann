@@ -5,7 +5,12 @@
         <%= category.address %>
       </span>
     </h2>
-    <span id="tooltip-text" class="tooltip-text">Copy to clipboard</span>
+    <% if (category.lang ==="en") { %>
+    <span id='tooltip-text__en' class="tooltip-text"> Click to copy </span>
+    <% } else if (category.lang==="fr") {%>
+
+    <span id='tooltip-text__fr' class="tooltip-text"> Cliquez pour copier </span>
+    <% } %>
   </button>
 </div>
 <% } %>

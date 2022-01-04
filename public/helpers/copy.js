@@ -2,13 +2,23 @@ function copyText() {
   const copy = document.getElementById("email").innerHTML;
   navigator.clipboard.writeText(copy);
 
-  const tooltip = document.getElementById("tooltip-text");
-  tooltip.innerHTML = "Copied!";
+  const tooltipEn = document.getElementById("tooltip-text__en");
+  const tooltipFr = document.getElementById("tooltip-text__fr");
+  if (tooltipEn) {
+    tooltipEn.innerHTML = "Copied!";
+  } else if (tooltipFr) {
+    tooltipFr.innerHTML = "Copié!";
+  }
 }
 
 function outFunc() {
-  var tooltip = document.getElementById("tooltip-text");
-  tooltip.innerHTML = "Copy to clipboard";
+  const tooltipEn = document.getElementById("tooltip-text__en");
+  const tooltipFr = document.getElementById("tooltip-text__fr");
+  if (tooltipEn) {
+    tooltipEn.innerHTML = "Click to copy";
+  } else if (tooltipFr) {
+    tooltipFr.innerHTML = "Cliquez pour copier";
+  }
 }
 
 function assignCopyButtonBehaviour(id) {
