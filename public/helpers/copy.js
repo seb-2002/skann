@@ -13,8 +13,12 @@ function outFunc() {
 
 function assignCopyButtonBehaviour(id) {
   const contactButton = document.getElementById(id);
-  contactButton.onclick = () => copyText();
-  contactButton.onmouseout = () => outFunc();
+  if (contactButton) {
+    const titleBox = document.getElementsByClassName("title-box")[0];
+    titleBox.style.visibility = "hidden";
+    contactButton.onclick = () => copyText();
+    contactButton.onmouseout = () => outFunc();
+  }
 }
 
 module.exports = {
