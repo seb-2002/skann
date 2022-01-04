@@ -143,6 +143,8 @@ button.home-button {
 }
 button.contact-button {
   border-radius: 5px;
+  transform: skewY(-2deg);
+  margin-bottom: 4.5rem;
 }
 
 div.button-box {
@@ -206,20 +208,27 @@ div.button-box .back-button p {
 }
 
 .content-box {
-  transform: skewY(-2deg);
   overflow: auto;
   margin-top: 20vh;
   margin-bottom: 3rem;
   width: 100%;
+  position: relative;
 }
 
 div.p-box,
 div.show-box,
 div.year-box,
 div.link-type-box {
+  transform: skewY(-2deg);
   width: 90%;
   max-width: 500px;
   margin-bottom: 1.5rem;
+}
+div.p-box:nth-of-type(1),
+div.show-box:nth-of-type(1),
+div.year-box:nth-of-type(1),
+div.link-type-box:nth-of-type(1) {
+  margin-top: 0.75rem;
 }
 div.p-box p,
 div.show-box p,
@@ -238,15 +247,10 @@ div.p-box .flex-container {
   align-items: center;
 }
 
-div.show-box,
-div.contact-box {
+div.show-box {
   border-radius: 5px;
   background-color: #cccccc;
   opacity: 0.8;
-}
-
-.content-box {
-  position: relative;
 }
 
 .contact-box {

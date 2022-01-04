@@ -16,6 +16,8 @@ button {
   }
   &.contact-button {
     border-radius: $box-radius;
+    transform: skewY(-2deg);
+    margin-bottom: $box-margin-bottom-large;
   }
 }
 
