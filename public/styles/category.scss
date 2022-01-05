@@ -28,6 +28,8 @@ div.link-type-box {
   }
 }
 
+
+
 div.p-box {
   @include greyTheme($opacity: 1);
   .flex-container {
@@ -156,4 +158,14 @@ div.year-box {
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
+}
+
+@media screen and (min-width: 1024px) {
+  div.p-box,
+div.show-box,
+div.year-box,
+div.link-type-box
+{
+max-width: 600px;
+}
 }

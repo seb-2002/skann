@@ -47,19 +47,19 @@ div.menu-box {
     position: absolute;
     width: auto;
   }
-  h2 {
-    font-size: 2rem;
+  h2.menu-text {
+    font-size: 3rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  h2 {
+  h2.menu-text {
     font-size: 3rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  h2 {
+  h2.menu-text {
     font-size: 4rem;
   }
 }

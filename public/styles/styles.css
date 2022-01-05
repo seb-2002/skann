@@ -112,17 +112,17 @@ div.menu-box h2 {
     width: auto;
   }
 
-  h2 {
-    font-size: 2rem;
+  h2.menu-text {
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 768px) {
-  h2 {
+  h2.menu-text {
     font-size: 3rem;
   }
 }
 @media screen and (min-width: 1440px) {
-  h2 {
+  h2.menu-text {
     font-size: 4rem;
   }
 }
@@ -385,6 +385,14 @@ div.year-box a:last-of-type img {
   border-color: #555 transparent transparent transparent;
 }
 
+@media screen and (min-width: 1024px) {
+  div.p-box,
+div.show-box,
+div.year-box,
+div.link-type-box {
+    max-width: 600px;
+  }
+}
 .ticker-wrap {
   position: absolute;
   top: 0;
@@ -429,7 +437,7 @@ p.no-text-decoration {
   color: black;
 }
 
-.subheading, .bio_paragraph, .menu-text {
+.subheading, .menu-text {
   font-size: 2rem;
 }
 
@@ -453,6 +461,12 @@ p.no-text-decoration {
 }
 .credits-works {
   color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .bio_paragraph {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

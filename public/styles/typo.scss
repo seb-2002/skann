@@ -9,7 +9,7 @@ p.no-text-decoration {
   color: $black;
 }
 
-.subheading, .bio_paragraph, .menu-text {
+.subheading,  .menu-text {
   font-size: $p;
 }
 
@@ -35,4 +35,10 @@ p.no-text-decoration {
   &-works {
     color: $black;
   }
+}
+
+@media screen and (min-width: 768px) {
+ .bio_paragraph{
+   font-size: $p;
+ }
 }
