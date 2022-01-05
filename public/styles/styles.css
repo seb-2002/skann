@@ -444,4 +444,13 @@ div.year-box a:last-of-type img {
   color: white;
 }
 
+.nav {
+  background-color: green;
+  position: fixed;
+  height: 100%;
+  width: 75%;
+  transition: 3s ease;
+  transform: translateX(-100%);
+}
+
 /*# sourceMappingURL=styles.css.map */

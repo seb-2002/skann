@@ -10,12 +10,14 @@ const { generateColorValues } = require("./handleColors");
 const { shrinkTitle } = require("./title");
 const { isMobile } = require("./handleResponsivity");
 const { assignCopyButtonBehaviour, changeTickerTape } = require("./copy");
+const {assignShowNav} = require('./nav')
 
 function handleFunction() {
   let { thisLang, url } = getLang();
   setLang(thisLang, url);
-  setHomeAction(thisLang);
+  // setHomeAction(thisLang);
   // setBackAction(url, backButton);
+  assignShowNav("navButton");
   generateColorValues();
   shrinkTitle();
   assignCopyButtonBehaviour("contact-button");

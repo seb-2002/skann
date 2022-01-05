@@ -160,12 +160,14 @@ const { generateColorValues } = require("./handleColors");
 const { shrinkTitle } = require("./title");
 const { isMobile } = require("./handleResponsivity");
 const { assignCopyButtonBehaviour, changeTickerTape } = require("./copy");
+const {assignShowNav} = require('./nav')
 
 function handleFunction() {
   let { thisLang, url } = getLang();
   setLang(thisLang, url);
-  setHomeAction(thisLang);
+  // setHomeAction(thisLang);
   // setBackAction(url, backButton);
+  assignShowNav("navButton");
   generateColorValues();
   shrinkTitle();
   assignCopyButtonBehaviour("contact-button");
@@ -180,7 +182,36 @@ window.onload = (e) => {
   handleFunction();
 };
 
-},{"./buttons":1,"./copy":2,"./handleColors":3,"./handleResponsivity":4,"./scatterMenu":6,"./title":7}],6:[function(require,module,exports){
+},{"./buttons":1,"./copy":2,"./handleColors":3,"./handleResponsivity":4,"./nav":6,"./scatterMenu":7,"./title":8}],6:[function(require,module,exports){
+function showNav () {
+  let navBar = document.getElementsByClassName("nav")[0];
+  let categoryBody = document.getElementsByClassName("category-body")[0];
+  console.log(navBar);
+  navBar.style.transform = "translateX(0)";
+  categoryBody.onclick = () => hideNav();
+
+
+}
+
+function hideNav () {
+  let navBar = document.getElementsByClassName("nav")[0];
+  navBar.style.transform = "translateX(-100%)";
+  
+}
+
+function assignShowNav (id) {
+  let navButton = document.getElementById(id);
+  if (navButton) {
+    
+  navButton.onclick = () => showNav();
+  }
+
+}
+
+module.exports = {
+  assignShowNav,
+}
+},{}],7:[function(require,module,exports){
 const countHTMLObjectsByClass = (className) => {
   let HTMLObjects = document.getElementsByClassName(className);
   return HTMLObjects.length;
@@ -251,7 +282,7 @@ module.exports = {
   generateObjectPositions,
 };
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 function shrinkTitle() {
   let url = window.location.pathname;
   if (url.length > 4) {
