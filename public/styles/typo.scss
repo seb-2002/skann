@@ -1,0 +1,38 @@
+a {
+  text-decoration: none;
+  .underline{
+    text-decoration: underline;
+  }
+}
+
+p.no-text-decoration {
+  color: $black;
+}
+
+.subheading, .bio_paragraph, .menu-text {
+  font-size: $p;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+// collabs 
+
+.year-title {
+  font-size: $heading-mobile;
+}
+
+.credits {
+  font-size: $info-size;
+  font-family: $credits-font;
+  &-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $info-size;
+  }
+  &-works {
+    color: $black;
+  }
+}

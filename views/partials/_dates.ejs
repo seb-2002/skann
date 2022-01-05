@@ -26,9 +26,19 @@
               </p>
             </div>
             <div class="info-box">
-              <p class="agenda-title">
-                <%=thisEng.title%>
-              </p>
+              <% if (thisEng.project_href) { %>
+                <a href="<%= thisEng.project_href%>">
+                  <p class="agenda-title subheading underline">
+                    <%=thisEng.title%>
+                  </p>
+                </a>
+                <% } else { %>
+                  <p class="agenda-title subheading">
+                    <%=thisEng.title%>
+                  </p>
+                 
+              <% } %>
+
               <p class="agenda-info credits">
            
                 <a href="<%=thisEng.institution_href%>">

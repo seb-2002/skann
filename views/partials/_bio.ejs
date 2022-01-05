@@ -1,35 +1,32 @@
 <% if (category.title==="Bio" && category.text) { %>
 
+
   <% for (let i=0; i < category.text.length; i++) { %>
-
-    <% if (category.text[i].href) { %>
-
+        <% if (category.text[i].href) { %>
       <div class="p-box p-box__link">
         <a href="<%=category.text[i].href%>">
           
-          <p>
+         
               <div class="flex-container">
-              <span class="no-text-decoration">
+              <p class="no-text-decoration bio_paragraph">
               <%=category.text[i].p%>
-            </span>
+              </p>
             <span class="link-arrow">
               &nbsp&nbsp&nbsp⮕
             </span>
           </div>
-        </p>
+     
         </a>
       </div>
-
-
-      <% } else { %>
+      <% } else if (category.text[i].p) { %>
 
         <div class="p-box">
-          <p>
-            <div class="flex-container">
+          <div class="flex-container">
+              <p class="bio_paragraph">
 
               <%=category.text[i].p%>
+            </p>
             </div>
-          </p>
         </div>
 
 

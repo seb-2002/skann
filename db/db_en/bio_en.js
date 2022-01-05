@@ -2,6 +2,7 @@ const bio_en = {
   title: "Bio",
   ticker: "bio",
   text: [
+ 
     {
       p: "Sebastian Kann (he/him) is a performer, theorist, dramaturge and performance maker.",
       href: "",

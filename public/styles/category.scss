@@ -74,18 +74,7 @@ div.year-box {
   margin-top: -$info-size;
 }
 
-.credits {
-  font-size: $info-size;
-  &-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: $info-size;
-  }
-  &-works {
-    color: $black;
-  }
-}
+
 
 .work-flex {
   align-items: center;
@@ -115,11 +104,12 @@ div.year-box {
 
 .practice-title {
   padding-top: $p;
+  
 }
 
-.year-title {
-  font-size: 2rem;
-}
+
+
+
 
 .dates {
   transform: rotate($dates-angle);

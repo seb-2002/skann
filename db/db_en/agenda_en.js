@@ -16,6 +16,7 @@ const agenda_en = {
       type: "residency",
       type_href: "/en/collab",
       title: "I miss grandma so Sad",
+      project_href: "https://www.acrobatetoimeme.com/",
       dates: "22-28aug",
       institution: "La Chapelle",
       institution_href: "https://lachapelle.org/fr/programmation/residence",
