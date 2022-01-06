@@ -28,14 +28,6 @@
     transform: translateY(0);
   }
 }
-h1, h2, p {
-  font-family: serif;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -277,7 +269,7 @@ div.show-box {
 
 .contact-box {
   position: relative;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 div.year-box,
@@ -287,8 +279,8 @@ div.year-box,
   opacity: 0.8;
 }
 
-div.show-box a:last-of-type img,
-div.year-box a:last-of-type img {
+div.show-box img:last-of-type,
+div.year-box img:last-of-type {
   margin-bottom: -5px;
 }
 
@@ -426,15 +418,16 @@ div.link-type-box {
   color: white;
 }
 
-a {
-  text-decoration: none;
-}
-a .underline {
-  text-decoration: underline;
+h1, h2, p {
+  font-family: serif;
 }
 
-p.no-text-decoration {
-  color: black;
+h2 {
+  font-size: 1.5rem;
+}
+
+a.no-text-decoration {
+  text-decoration: none;
 }
 
 .subheading, .menu-text {
@@ -463,9 +456,23 @@ p.no-text-decoration {
   color: black;
 }
 
+@media screen and (min-width: 540px) {
+  #email {
+    font-size: 2rem;
+  }
+}
 @media screen and (min-width: 768px) {
+  #email {
+    font-size: 4rem;
+  }
+
   .bio_paragraph {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #email {
+    font-size: 6rem;
   }
 }
 

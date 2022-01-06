@@ -2,35 +2,30 @@
 
 
   <% for (let i=0; i < category.text.length; i++) { %>
-        <% if (category.text[i].href) { %>
-      <div class="p-box p-box__link">
-        <a href="<%=category.text[i].href%>">
-          
-         
-              <div class="flex-container">
-              <p class="no-text-decoration bio_paragraph">
-              <%=category.text[i].p%>
-              </p>
-            <span class="link-arrow">
-              &nbsp&nbsp&nbsp⮕
-            </span>
-          </div>
-     
-        </a>
-      </div>
-      <% } else if (category.text[i].p) { %>
+       
 
         <div class="p-box">
           <div class="flex-container">
               <p class="bio_paragraph">
 
-              <%=category.text[i].p%>
+             <% let paragraph = category.text[i] %> 
+
+             <% for (let span in paragraph) { %> 
+             <% if (paragraph[span].href) { %>
+              <a class="underline" href="<%= paragraph[span].href %> ">
+                <%= paragraph[span].anchor %> 
+              </a>
+
+              <% } else { %>
+               <%= paragraph[span] %> 
+             <% } %>
+          <% } %> 
             </p>
             </div>
         </div>
 
 
-        <% } %>
+      
 
 
           <% } %>

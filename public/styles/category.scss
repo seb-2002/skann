@@ -44,7 +44,7 @@ div.show-box {
 
 .contact-box {
   position: relative;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 div.year-box,
@@ -54,10 +54,10 @@ div.year-box,
 
 div.show-box,
 div.year-box {
-  a:last-of-type {
-    img {
+   
+    img:last-of-type {
       margin-bottom: -5px;
-    }
+    
   }
 }
 
