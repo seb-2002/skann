@@ -9,36 +9,45 @@
   <div class="flex-column work-flex">
     <% if (category[work].href_ex) { %>
     <a target="_blank" href="<%=category[work].href_ex%>">
+      <p class="underline subheading"><%=category[work].title%></p>
+    </a>
 
-      <% } else { %>
-      <a href="<%=category.href%><%=work%>">
+    <% } else if (category[work].href_isHidden) { %>
+    <p class="underline subheading"><%=category[work].title%></p>
+    <% } else { %>
 
-        <%  } %>
+    <a href="<%=category.href%><%=work%>">
+      <p class="underline subheading"><%=category[work].title%></p>
+    </a>
+
+    <%  } %>
 
 
-        <p class="underline subheading"><%=category[work].title%></p>
-      </a>
-      <p class="no-text-decoration bold">
 
-        <%=category[work].year%>
-      </p>
-      <p class="credits credits-works">
-        <%=category[work].credits%>
-      </p>
+    <p class="no-text-decoration bold">
+
+      <%=category[work].year%>
+    </p>
+    <p class="credits credits-works">
+      <%=category[work].credits%>
+    </p>
 
   </div>
   </p>
   <% if (category[work].src) { %>
   <% if (category[work].href_ex) { %>
-  <a href="<%=category[work].href_ex%>">
+  <a target="_blank" href="<%=category[work].href_ex%>">
+    <img class="works-img" src="<%=category[work].src%>" alt="">
+  </a>
+  <% } else if (category[work].href_isHidden) { %>
+  <img class="works-img" src="<%=category[work].src%>" alt="">
+  <% } else { %>
+  <a href="<%=category.href%><%=work%>">
+    <img class="works-img" src="<%=category[work].src%>" alt="">
+  </a>
 
-    <% } else { %>
-    <a href="<%=category.href%><%=work%>">
-
-      <%  } %>
-      <img class="works-img" src="<%=category[work].src%>" alt="">
-    </a>
-    <% } %>
+  <%  } %>
+  <% } %>
 </div>
 
 

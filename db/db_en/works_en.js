@@ -3,6 +3,7 @@ const works_en = {
   title: "Works",
   ticker: "works",
   topical_dance: {
+    href_isHidden: true,
     title: "Topical Dance",
     ticker: "topical dance",
     year: "research 2022",
