@@ -33,42 +33,41 @@
 
     <!-- check if there is a link -->
     <% if (thisProject.href) { %>
-      <div class="credits-flex">
-        <div class="flex-column">
-          <a href="<%=thisProject.href%>">
-            <p class="teaching-title underline subheading">
-              <%=thisProject.title%>
-            </p>
-          </a>
-          <p class="credits no-text-decoration">
-            <%=thisProject.description%>
+    <div class="credits-flex">
+      <div class="flex-column">
+        <a target="_blank" href="<%=thisProject.href%>">
+          <p class="teaching-title underline subheading">
+            <%=thisProject.title%>
           </p>
-        </div>
-
-        </div>
-      
-
-
-
-
-
-      <!-- if no link ... -->
-      <% } else {%>
-      <p class="teaching-title subheading">
-        <%=thisProject.title%>
-      </p>
-      <div class="credits credits-flex">
-        <span>
+        </a>
+        <p class="credits no-text-decoration">
           <%=thisProject.description%>
-        </span>
+        </p>
       </div>
 
-      <% } %>
-      <% if (thisProject.src) { %>
+    </div>
 
-      <img class="collab-img" src="<%=thisProject.src%>" alt="">
 
-      <% } %>
+
+
+
+    <!-- if no link ... -->
+    <% } else {%>
+    <p class="teaching-title subheading">
+      <%=thisProject.title%>
+    </p>
+    <div class="credits credits-flex">
+      <span>
+        <%=thisProject.description%>
+      </span>
+    </div>
+
+    <% } %>
+    <% if (thisProject.src) { %>
+
+    <img class="collab-img" src="<%=thisProject.src%>" alt="">
+
+    <% } %>
 
 
 

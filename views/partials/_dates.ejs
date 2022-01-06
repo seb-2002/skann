@@ -2,75 +2,80 @@
 
 <% if (category.title==="Dates" || category.title==="Agenda" ) { %>
 
-  <% for (let year in category) { %>
+<% for (let year in category) { %>
 
-    <!-- each year box starts here  -->
-    <% if (year !=="title" && year !=="ticker" ) { %>
+<!-- each year box starts here  -->
+<% if (year !=="title" && year !=="ticker" ) { %>
 
-      <div class="year-box">
+<div class="year-box">
 
-        <!-- prints the year -->
-        <p class="year-title">
-          <%=category[year].year%>
-        </p>
+  <!-- prints the year -->
+  <p class="year-title">
+    <%=category[year].year%>
+  </p>
 
-        <% for (let eng in category[year]) { %>
-          <% if (eng !== "year") { %>
-          <% let thisEng=category[year][eng] %>
-          <div class="agenda-box flex">
+  <% for (let eng in category[year]) { %>
+  <% if (eng !== "year") { %>
+  <% let thisEng=category[year][eng] %>
+  <div class="agenda-box flex">
 
-            <div class="date-box">
-              <p class="dates credits">
+    <div class="date-box">
+      <p class="dates credits">
 
-                <%=thisEng.dates%>
-              </p>
-            </div>
-            <div class="info-box">
-              <% if (thisEng.project_href) { %>
-                <a href="<%= thisEng.project_href%>">
-                  <p class="agenda-title subheading underline">
-                    <%=thisEng.title%>
-                  </p>
-                </a>
-                <% } else { %>
-                  <p class="agenda-title subheading">
-                    <%=thisEng.title%>
-                  </p>
-                 
-              <% } %>
-
-              <p class="agenda-info credits">
-           
-                <a class="no-text-decoration" href="<%=thisEng.institution_href%>">
-
-                  <span class="eng-inst with_comma">
-                    @<%=thisEng.institution%>,
-                  </span>
-                </a>
-                <span class="eng-place">
-                  <%=thisEng.place%>
-                </span>
-              </p>
-                <p class="eng-type">
-                  <a class="no-text-decoration" href="<%=thisEng.type_href%>">
-
-                    <span class="credits eng-type">
-                      #<%=thisEng.type%>
-                    </span>
-                  </a>
-              </p>
-            </div>
-          </div>
-
-        <%  } %>
-      <%  } %>
-
+        <%=thisEng.dates%>
+      </p>
     </div>
-            
-  <% }%>
-            
-<% } %>
-          
+    <div class="info-box">
+      <% if (thisEng.project_href) { %>
+      <a target="_blank" href="<%= thisEng.project_href%>">
+        <p class="agenda-title subheading underline">
+          <%=thisEng.title%>
+        </p>
+      </a>
+      <% } else if (thisEng.project_href_int) { %>
+
+      <a href="<%= thisEng.project_href_int%>">
+        <p class="agenda-title subheading underline">
+          <%=thisEng.title%>
+        </p>
+      </a>
+      <% } else { %>
+      <p class="agenda-title subheading">
+        <%=thisEng.title%>
+      </p>
+
+      <% } %>
+
+      <p class="agenda-info credits">
+
+        <a target="_blank" class="no-text-decoration" href="<%=thisEng.institution_href%>">
+
+          <span class="eng-inst with_comma">
+            @<%=thisEng.institution%>,
+          </span>
+        </a>
+        <span class="eng-place">
+          <%=thisEng.place%>
+        </span>
+      </p>
+      <p class="eng-type">
+        <a class="no-text-decoration" href="<%=thisEng.type_href%>">
+
+          <span class="credits eng-type">
+            #<%=thisEng.type%>
+          </span>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <%  } %>
+  <%  } %>
+
+</div>
+
+<% }%>
+
 <% } %>
 
-      
+<% } %>

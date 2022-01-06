@@ -1,33 +1,37 @@
 <% if (category.title==="Bio" && category.text) { %>
 
 
-  <% for (let i=0; i < category.text.length; i++) { %>
-       
-
-        <div class="p-box">
-          <div class="flex-container">
-              <p class="bio_paragraph">
-
-             <% let paragraph = category.text[i] %> 
-
-             <% for (let span in paragraph) { %> 
-             <% if (paragraph[span].href) { %>
-              <a class="underline" href="<%= paragraph[span].href %> ">
-                <%= paragraph[span].anchor %> 
-              </a>
-
-              <% } else { %>
-               <%= paragraph[span] %> 
-             <% } %>
-          <% } %> 
-            </p>
-            </div>
-        </div>
+<% for (let i=0; i < category.text.length; i++) { %>
 
 
-      
+<div class="p-box">
+  <div class="flex-container">
+    <p class="bio_paragraph">
+
+      <% let paragraph = category.text[i] %>
+
+      <% for (let span in paragraph) { %>
+      <% if (paragraph[span].href) { %>
+      <a target="_blank" class="underline" href="<%= paragraph[span].href %> ">
+        <%= paragraph[span].anchor %>
+      </a>
+      <% } else if (paragraph[span].href_int) { %>
+      <a class="underline" href="<%= paragraph[span].href_int %> ">
+        <%= paragraph[span].anchor %>
+      </a>
+
+      <% } else { %>
+      <%= paragraph[span] %>
+      <% } %>
+      <% } %>
+    </p>
+  </div>
+</div>
 
 
-          <% } %>
 
-            <% } %>
+
+
+<% } %>
+
+<% } %>

@@ -23,15 +23,15 @@ const collab_en = {
       title: "Perfoming for others",
       projects: {
         sarah_manya: {
-          title: "Montréal Danse research workshop",
+          title: "Montréal Danse / Sarah Manya",
           description:
-            "choreography- Sarah Manya // dance- Sebastian Kann + Erin Hill",
+            "research workshop //choreography- Sarah Manya //dance- Sebastian Kann + Erin Hill",
           href: "https://montrealdanse.com/new2/",
         },
         nien_tzu: {
           title: "Danse Cité Espace Recherche",
           description:
-            "choreography - Nien Tzu Weng // performance- Nien Tzu Weng, Basile Herrmann Philippe, Sebastian Kann // sound design- Sebastian Kann",
+            "choreography - Nien Tzu Weng //performance- Nien Tzu Weng, Basile Herrmann Philippe, Sebastian Kann //sound design- Sebastian Kann",
           href: "https://danse-cite.org/recherche-activites/espace-recherche",
         },
       },
@@ -42,14 +42,14 @@ const collab_en = {
         acrobatetoimeme: {
           title: "acrobatetoimeme.com",
           description:
-            "artist site for François Bouvier // design + development- Sebastian Kann",
+            "artist site for François Bouvier //design + development- Sebastian Kann",
           href: "https://www.acrobatetoimeme.com/",
           src: "/static/src/franky_img.png",
         },
         emilepineault: {
           title: "emilepineault.com",
           description:
-            "artist site for Emile Pineault // design- Benjamin Jacques // development- Sebastian Kann",
+            "artist site for Emile Pineault/ /design- Benjamin Jacques //development- Sebastian Kann",
           href: "https://emilepineault.com/",
           src: "/static/src/emile_img.png",
         },

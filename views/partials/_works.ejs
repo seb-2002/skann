@@ -8,7 +8,7 @@
 
   <div class="flex-column work-flex">
     <% if (category[work].href_ex) { %>
-    <a href="<%=category[work].href_ex%>">
+    <a target="_blank" href="<%=category[work].href_ex%>">
 
       <% } else { %>
       <a href="<%=category.href%><%=work%>">
@@ -18,10 +18,10 @@
 
         <p class="underline subheading"><%=category[work].title%></p>
       </a>
-        <p class="no-text-decoration bold">
+      <p class="no-text-decoration bold">
 
-          <%=category[work].year%>
-        </p>
+        <%=category[work].year%>
+      </p>
       <p class="credits credits-works">
         <%=category[work].credits%>
       </p>
