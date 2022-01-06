@@ -7,7 +7,7 @@ const works_en = {
     title: "Topical Dance",
     ticker: "topical dance",
     year: "research 2022",
-    src: "",
+    src: "/static/src/td_img.png",
     credits: "creation- Sebastian Kann",
   },
 
