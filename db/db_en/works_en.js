@@ -8,7 +8,8 @@ const works_en = {
     ticker: "topical dance",
     year: "research 2022",
     src: "/static/src/td_img.png",
-    credits: "creation- Sebastian Kann",
+    credits:
+      "How does dance negotiate about-ness? A composition-driven research for one performing body, some lights and a screen.",
   },
 
   always_beautiful: {

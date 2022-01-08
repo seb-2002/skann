@@ -28,8 +28,6 @@ div.link-type-box {
   }
 }
 
-
-
 div.p-box {
   @include greyTheme($opacity: 1);
   .flex-container {
@@ -54,10 +52,8 @@ div.year-box,
 
 div.show-box,
 div.year-box {
-   
-    img:last-of-type {
-      margin-bottom: -5px;
-    
+  img:last-of-type {
+    margin-bottom: -5px;
   }
 }
 
@@ -75,8 +71,6 @@ div.year-box {
   margin-bottom: $info-size;
   margin-top: -$info-size;
 }
-
-
 
 .work-flex {
   align-items: center;
@@ -106,12 +100,7 @@ div.year-box {
 
 .practice-title {
   padding-top: $p;
-  
 }
-
-
-
-
 
 .dates {
   transform: rotate($dates-angle);
@@ -119,7 +108,7 @@ div.year-box {
 
 .date-box {
   margin-right: $date-box-margin;
-  min-width: 3rem;
+  min-width: 4rem;
 }
 
 .contact-text {
@@ -162,10 +151,9 @@ div.year-box {
 
 @media screen and (min-width: 1024px) {
   div.p-box,
-div.show-box,
-div.year-box,
-div.link-type-box
-{
-max-width: 600px;
-}
+  div.show-box,
+  div.year-box,
+  div.link-type-box {
+    max-width: 600px;
+  }
 }

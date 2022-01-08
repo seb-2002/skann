@@ -47,6 +47,7 @@
       <% } %>
 
       <p class="agenda-info credits">
+        <% if (thisEng.institution) { %>
 
         <a target="_blank" class="no-text-decoration" href="<%=thisEng.institution_href%>">
 
@@ -54,6 +55,7 @@
             @<%=thisEng.institution%>,
           </span>
         </a>
+        <% } %>
         <span class="eng-place">
           <%=thisEng.place%>
         </span>
