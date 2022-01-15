@@ -20,10 +20,6 @@ const pgogy_en = {
         },
       },
     },
-    performer: {
-      title: "Perfoming for others",
-      projects: {},
-    },
   },
 };
 

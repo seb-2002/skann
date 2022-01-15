@@ -2,34 +2,41 @@ const works_fr = {
   title: "Création",
   ticker: "créa",
   topical_dance: {
+    href_isHidden: true,
     title: "Topical Dance",
     ticker: "topical dance",
-    year: "research 2022",
-    src: "",
-    credits: "création- Sebastian Kann",
-  },
-  acrobatetoimeme: {
-    title: "acrobatetoimeme.com",
-    year: "2021",
-    src: "/static/src/franky_img.png",
-    credits: "web design and development- Sebastian Kann",
-    href_ex: "https://www.acrobatetoimeme.com/",
-  },
-  choreographing_touch: {
-    title: "Choreographing Touch - Conversations",
-    year: "2021",
-    src: "/static/src/touch_pod_img.jpg",
+    year: "recherche 2022",
+    src: "/static/src/td_img.png",
     credits:
-      "hosted by- Sebastian Kann + Vera Tussing // production, editing- Michael Picknett // image- Sarah Yu Zeebroek // with the participation of- Sarah van Lamsweerde, Alicia Hoost, Malik Nashad Sharpe, Salva Sanchis, Astrit Ismaili, Rebecca Goodine, Enric Granzotto Llagostera ",
-    href_ex: "https://www.spreaker.com/show/choreographing-touch-conversations",
+      "How does dance negotiate about-ness? A composition-driven research for one performing body, some lights and a screen.",
   },
+
   always_beautiful: {
     title: "Always / Beautiful",
     ticker: "a/b",
-    year: 2019,
+    year: "création 2019",
     src: "/static/src/ab_pic_1.jpg",
     credits:
-      "creation- Natalie Oleinik + Sebastian Kann // dramaturgy- Ilse Ghekiere // lights- Bert van Dijck // rigging- Lee Harry Clayden // special thanks to- Hugo Mega, François Bouvier, Vera Tussing, Anneleen Keppens",
+      "création, interpétation- Natalie Oleinik + Sebastian Kann //dramaturgie- Ilse Ghekiere //éclairage- Bert van Dijck //gréage- Lee Harry Clayden //un grand merci à- Hugo Mega, François Bouvier, Vera Tussing, Anneleen Keppens",
+    href_ex: "https://manorhouseforever.net/performances",
+  },
+
+  choreographing_touch: {
+    title: "Choreographing Touch - Conversations",
+    year: "baladodiffusion 2021",
+    src: "/static/src/touch_pod_img.jpg",
+    credits:
+      "animateurs- Sebastian Kann + Vera Tussing //production, montage- Michael Picknett //image- Sarah Yu Zeebroek //avec la participation de- Sarah van Lamsweerde, Alicia Hoost, Malik Nashad Sharpe, Salva Sanchis, Astrit Ismaili, Rebecca Goodine, Enric Granzotto Llagostera ",
+    href_ex: "https://www.spreaker.com/show/choreographing-touch-conversations",
+  },
+
+  thinking_through_circus: {
+    title: "Thinking Through Circus",
+    year: "publication 2020",
+    src: "/static/src/ttc_img.png",
+    credits:
+      "rédaction- Bauke Lievens, Sebastian Kann, Quintijn Ketels, Vincent Focquet (The Circus Dialogues) //avec la participation de- Camille Paycha, Dana Dugan, Mardulier en Deprez, Francesca Hyde, Josef Stiller, Natalie Oleinik, Anna Tauber, Floor van Leeuwen, Iris Carta, Alexandre Fray, Aline Breucker, Fran-Tank, François Bouvier",
+    href_ex: "https://www.circusdialogue.com/thinking-through-circus",
   },
 };
 module.exports = {

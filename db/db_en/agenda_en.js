@@ -20,7 +20,7 @@ const agenda_en = {
       project_href: "https://www.acrobatetoimeme.com/",
       dates: "22-28aug",
       institution: "La Chapelle",
-      institution_href: "https://lachapelle.org/fr/programmation/residence",
+      institution_href: "https://lachapelle.org/en/schedule/residencies",
       place: "Montréal / Tiohtiá:ke",
     },
 
@@ -57,7 +57,7 @@ const agenda_en = {
     },
     danse_cite: {
       title: "Espace recherche",
-      institution_href: "https://danse-cite.org/",
+      institution_href: "https://danse-cite.org/en/",
       dates: "18-22oct",
       institution: "Danse-Cité / The Mainline",
 
@@ -67,7 +67,7 @@ const agenda_en = {
     },
     ccov: {
       title: "Writing week",
-      institution_href: "https://ccov.org/",
+      institution_href: "https://ccov.org/en/",
       dates: "12-15oct",
       institution: "CCOV",
 
@@ -232,7 +232,7 @@ const agenda_en = {
       institution: "Les Noctambules",
       institution_href: "https://www.les-noctambules.com/fr/accueil.html",
       type: "residency",
-      type: "/en/collabs",
+      type_href: "/en/collabs",
       place: "Paris",
     },
     ab: {

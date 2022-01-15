@@ -7,14 +7,14 @@ const collab_en = {
       title: "Studio dramaturgy",
       projects: {
         lowest_parts: {
-          title: "The Lowest Parts",
+          title: "the lowest parts",
           description: "Emile Pineault //research phase",
           href: "https://emilepineault.com/projects/2022-the-lowest-parts/",
         },
         chose_en_soi: {
           title: "La chose en soi (working title)",
           description:
-            "The Chita Project // Anna Kichtchenko and Pablo Prampano //research phase //working title",
+            "The Chita Project //Anna Kichtchenko and Pablo Prampano //research phase",
           href: "https://www.facebook.com/thechitaproject/",
         },
         funfunfunfunfun: {
@@ -44,7 +44,7 @@ const collab_en = {
           title: "Danse Cité Espace Recherche",
           description:
             "choreography - Nien Tzu Weng //performance- Nien Tzu Weng, Basile Herrmann Philippe, Sebastian Kann //sound design- Sebastian Kann",
-          href: "https://danse-cite.org/recherche-activites/espace-recherche",
+          href: "https://danse-cite.org/en/recherche-activites/espace-recherche",
         },
       },
     },
@@ -61,7 +61,7 @@ const collab_en = {
         emilepineault: {
           title: "emilepineault.com",
           description:
-            "artist site for Emile Pineault/ /design- Benjamin Jacques //development- Sebastian Kann",
+            "artist site for Emile Pineault //design- Benjamin Jacques //development- Sebastian Kann",
           href: "https://emilepineault.com/",
           src: "/static/src/emile_img.png",
         },
@@ -103,7 +103,7 @@ const collab_en = {
         imgss: {
           title: "i miss Grandma so sad",
           description:
-            "creation + performance- François Bouvier// research phase",
+            "creation + performance- François Bouvier //research phase",
           href: "https://www.acrobatetoimeme.com/",
         },
       },
@@ -114,7 +114,7 @@ const collab_en = {
         cdtuque: {
           title: "Cirque de Tuque II",
           description:
-            "performers- François Bouvier, Oliver Smith-Wellnitz, Danilo de Campos Pacheco, Santeri Koivisto, Dave van de Wahl, Stephan Masur, Iurie Basiul// directed by- David Severins //costumes- Moritz Haakhe //light- Michael Abrazzo Blattmann",
+            "performers- François Bouvier, Oliver Smith-Wellnitz, Danilo de Campos Pacheco, Santeri Koivisto, Dave van de Wahl, Stephan Masur, Iurie Basiul //directed by- David Severins //costumes- Moritz Haakhe //light- Michael Abrazzo Blattmann",
         },
       },
     },

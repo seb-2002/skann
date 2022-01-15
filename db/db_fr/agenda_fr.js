@@ -5,17 +5,17 @@ const agenda_fr = {
     year: 2022,
     imgss_2: {
       type: "résidence",
-      type_href: "/en/collab",
+      type_href: "/fr/collab",
       title: "I miss grandma so Sad",
       project_href: "https://www.acrobatetoimeme.com/",
       dates: "5-16déc",
       institution: "Ottawa Dance Directive",
-      institution_href: "https://odd-cdc.org/",
+      institution_href: "https://odd-cdc.org/fr/",
       place: "Ottawa",
     },
     imgss: {
       type: "résidence",
-      type_href: "/en/collab",
+      type_href: "/fr/collab",
       title: "I miss grandma so Sad",
       project_href: "https://www.acrobatetoimeme.com/",
       dates: "22-28aoû",
@@ -26,11 +26,11 @@ const agenda_fr = {
 
     innovating_circus_technique: {
       type: "pédagogie",
-      type_href: "/en/pgogy",
+      type_href: "/fr/pgogy",
       title: "Innover la technique circassienne",
       dates: "jan-avr",
       institution: "ENC",
-      institution_href: "https://ecolenationaledecirque.ca/en",
+      institution_href: "https://ecolenationaledecirque.ca/fr",
       place: "Montréal / Tiohtiá:ke",
     },
   },
@@ -38,11 +38,11 @@ const agenda_fr = {
     year: 2021,
     montreal_danse: {
       type: "résidence",
-      type_href: "/en/collab",
+      type_href: "/fr/collab",
       title: "Recherche Chorégraphique / Sarah Manya",
       dates: "13-17déc",
       institution: "Montréal Danse",
-      institution_href: "https://montrealdanse.com/new2/",
+      institution_href: "https://montrealdanse.com/new2/fr/",
       place: "Montréal / Tiohtiá:ke",
     },
     chita_sutton: {
@@ -53,7 +53,7 @@ const agenda_fr = {
       institution_href: "https://dartsetdereves.org/en/",
       place: "Sutton, QC",
       type: "résidence",
-      type_href: "/en/collab",
+      type_href: "/fr/collab",
     },
     danse_cite: {
       title: "Espace recherche",
@@ -63,7 +63,7 @@ const agenda_fr = {
 
       place: "Montréal / Tiohtiá:ke",
       type: "résidence",
-      type_href: "/en/collab",
+      type_href: "/fr/collab",
     },
     ccov: {
       title: "Semaine d'écriture",
@@ -73,38 +73,38 @@ const agenda_fr = {
 
       place: "Montréal / Tiohtiá:ke",
       type: "résidence d;écriture",
-      type_href: "/en/collab",
+      type_href: "/fr/collab",
     },
     topical_danse: {
       title: "Topical Dance",
       place: "Montréal / Tiohtiá:ke",
-      project_href_int: "/en/works",
+      project_href_int: "/fr/works",
       institution: "LE PACA",
       institution_href: "https://lesfoutoukours.com/fr/paca/",
       dates: "29sep-3oct",
       type: "résidence",
-      type_href: "/en/works",
+      type_href: "/fr/works",
     },
     lowest_parts_2: {
       title: "the lowest parts",
       project_href: "https://emilepineault.com/projects/2022-the-lowest-parts/",
       place: "Montréal / Tiohtiá:ke",
       institution: "Studio 303",
-      institution_href: "https://www.studio303.ca/en/category/residencies/",
+      institution_href: "https://www.studio303.ca/category/residencies/",
       dates: "14-16jul",
       type: "résidence",
-      type_href: "/en/collab",
+      type_href: "/fr/collab",
     },
     funfunfunfunfun: {
       title: "funfunfunfunfun",
       place: "Montréal / Tiohtiá:ke",
       project_href:
-        "https://montrealcompletementcirque.com/en/program/shows/fun-fun-fun-fun-fun/",
+        "https://montrealcompletementcirque.com/fr/programmation/spectacles/fun-fun-fun-fun-fun/",
       institution: "Montéal Complètement Cirque",
-      institution_href: "https://montrealcompletementcirque.com/en/",
+      institution_href: "https://montrealcompletementcirque.com/fr/",
       dates: "7-13jul",
       type: "représentations (dramaturgie)",
-      type_href: "/en/collab",
+      type_href: "/fr/collab",
     },
     chita_cds: {
       title: "La chose en soi",
@@ -114,7 +114,7 @@ const agenda_fr = {
       institution_href: "https://tohu.ca/en",
       place: "Montréal / Tiohtiá:ke",
       type: "résidence",
-      type_href: "/en/collab",
+      type_href: "/fr/collab",
     },
     uca: {
       title: "Une caresse animée",
@@ -124,7 +124,7 @@ const agenda_fr = {
       institution_href: "https://offta.com/evenement2021/francois-bouvier/",
       place: "Montréal / Tiohtiá:ke",
       type: "représentations (dramaturgie)",
-      type_href: "/en/collab",
+      type_href: "/fr/collab",
     },
     uca_avantP: {
       title: "Une caresse animée",
@@ -134,7 +134,7 @@ const agenda_fr = {
       institution_href: "https://avantpremiere.ca/",
       place: "Gatineau, QC",
       type: "résidence",
-      type_href: "/en/collab",
+      type_href: "/fr/collab",
     },
     chita_cds_2: {
       title: "La chose en soi",
@@ -144,7 +144,7 @@ const agenda_fr = {
       institution_href: "https://tohu.ca/en",
       place: "Montréal / Tiohtiá:ke",
       type: "résidence",
-      type_href: "/en/collab",
+      type_href: "/fr/collab",
     },
     lowest_parts: {
       title: "the lowest parts",
@@ -155,7 +155,7 @@ const agenda_fr = {
       place: "Montréal / Tiohtiá:ke",
       dates: "29-31mar",
       type: "résidence",
-      type_href: "/en/collab",
+      type_href: "/fr/collab",
     },
     choreographing_touch: {
       title: "Choreographing Touch - Conversations",
@@ -163,7 +163,7 @@ const agenda_fr = {
         "https://www.spreaker.com/show/choreographing-touch-conversations",
       dates: "3mar-7avr",
       type: "baladodiffusion",
-      type_href: "/en/works",
+      type_href: "/fr/works",
       place: "Montréal / Tiohtiá:ke, Brussels, Amsterdam, London",
     },
     care: {
@@ -174,7 +174,7 @@ const agenda_fr = {
       institution: "KASK",
       institution_href: "https://schoolofartsgent.be/2021/?lang=en",
       type: "discussion",
-      type_href: "/en/collab",
+      type_href: "/fr/collab",
       place: "Montréal / Tiohtiá:ke, Bruxelles, Londres, Stockholm",
     },
   },
@@ -188,7 +188,7 @@ const agenda_fr = {
       institution_href: "https://www.kaaitheater.be/en",
       place: "Bruxelles",
       type: "résidence",
-      type_href: "/en/collab",
+      type_href: "/fr/collab",
     },
     imgss: {
       title: "I miss Grandma so sad",
@@ -197,7 +197,7 @@ const agenda_fr = {
       institution: "Circuscentrum",
       institution_href: "https://www.circuscentrum.be/",
       type: "résidence",
-      type: "/en/collab",
+      type: "/fr/collab",
       place: "Gand",
     },
     ab_degrotepost: {
@@ -209,7 +209,7 @@ const agenda_fr = {
         "https://www.degrotepost.be/agenda/1974/Manor_House/Always_Beautiful/",
       place: "Ostende",
       type: "représentation (interprétation)",
-      type_href: "/en/works",
+      type_href: "/fr/works",
     },
     circusdialogues_symp: {
       title:
@@ -221,7 +221,7 @@ const agenda_fr = {
         "https://www.vooruit.be/en/agenda/2365/A_Circus_Symposium/Smells_like_Dialogue/",
       place: "Ghent",
       type: "symposium/semaine de recherche",
-      type_href: "/en/works",
+      type_href: "/frworks",
     },
   },
   year_2019: {
@@ -233,7 +233,7 @@ const agenda_fr = {
       institution: "Les Noctambules",
       institution_href: "https://www.les-noctambules.com/fr/accueil.html",
       type: "résidence",
-      type: "/en/collab",
+      type_href: "/frcollab",
       place: "Paris",
     },
     ab: {
@@ -244,7 +244,7 @@ const agenda_fr = {
       institution_href:
         "https://www.theateropdemarkt.be/programma/programmaboek/",
       type: "performance/premiere",
-      type_href: "/en/works",
+      type_href: "/frworks",
       place: "Neerpelt, BE",
     },
   },
