@@ -118,7 +118,7 @@ const agenda_en = {
     },
     uca: {
       title: "Une caresse animée",
-      project_href: "www.acrobatetoimeme.com",
+      project_href: "http://www.acrobatetoimeme.com",
       dates: "31may-4jun",
       institution: "OFFTA / La Serre",
       institution_href: "https://offta.com/evenement2021/francois-bouvier/",
@@ -128,7 +128,7 @@ const agenda_en = {
     },
     uca_avantP: {
       title: "Une caresse animée",
-      project_href: "www.acrobatetoimeme.com",
+      project_href: "http://www.acrobatetoimeme.com",
       dates: "4-6may",
       institution: "L'avant-première",
       institution_href: "https://avantpremiere.ca/",
@@ -183,7 +183,7 @@ const agenda_en = {
     kaai: {
       title: "Un-Staging Tactility",
       dates: "22may",
-      project_href: "www.veratussing.com",
+      project_href: "https://www.veratussing.com/",
       institution: "KAAI",
       institution_href: "https://www.kaaitheater.be/en",
       place: "Brussels",
@@ -193,7 +193,7 @@ const agenda_en = {
     imgss: {
       title: "I miss Grandma so sad",
       dates: "17-21feb",
-      project_href: "www.acrobatetoimeme.com",
+      project_href: "http://www.acrobatetoimeme.com",
       institution: "Circuscentrum",
       institution_href: "https://www.circuscentrum.be/",
       type: "residency",
@@ -228,7 +228,7 @@ const agenda_en = {
     imgss: {
       title: "I miss Grandma so sad",
       dates: "11-15nov",
-      project_href: "www.acrobatetoimeme.com",
+      project_href: "http://www.acrobatetoimeme.com",
       institution: "Les Noctambules",
       institution_href: "https://www.les-noctambules.com/fr/accueil.html",
       type: "residency",

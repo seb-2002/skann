@@ -12,13 +12,9 @@
 
       <% for (let span in paragraph) { %>
       <% if (paragraph[span].href) { %>
-      <a target="_blank" class="underline" href="<%= paragraph[span].href %> ">
-        <%= paragraph[span].anchor %>
-      </a>
+      <a target="_blank" class="underline" href="<%= paragraph[span].href%> "><%=paragraph[span].anchor%></a>
       <% } else if (paragraph[span].href_int) { %>
-      <a class="underline" href="<%= paragraph[span].href_int %> ">
-        <%= paragraph[span].anchor %>
-      </a>
+      <a class="underline" href="<%= paragraph[span].href_int%> "><%= paragraph[span].anchor %></a>
 
       <% } else { %>
       <%= paragraph[span] %>
