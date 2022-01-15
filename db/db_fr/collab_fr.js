@@ -112,7 +112,6 @@ const collab_fr = {
             "création + interprétation- François Bouvier //phase de recherche",
           src: "/static/src/imgss_img.png",
           href: "https://www.acrobatetoimeme.com/",
-          src: "/static/src/dialogues_img.png",
         },
       },
     },
