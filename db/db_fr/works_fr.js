@@ -2,19 +2,17 @@ const works_fr = {
   title: "Création",
   ticker: "créa",
   topical_dance: {
-    href_isHidden: true,
     title: "Topical Dance",
     ticker: "topical dance",
     year: "recherche 2022",
     src: "/static/src/td_img.png",
-    credits:
-      "How does dance negotiate about-ness? A composition-driven research for one performing body, some lights and a screen.",
+    href_ex: "https://vimeo.com/666322647",
   },
 
   always_beautiful: {
     title: "Always / Beautiful",
     ticker: "a/b",
-    year: "création 2019",
+    year: "création 2019 (mdp vimeo: ab2019)",
     src: "/static/src/ab_pic_1.jpg",
     credits:
       "création, interpétation- Natalie Oleinik + Sebastian Kann //dramaturgie- Ilse Ghekiere //éclairage- Bert van Dijck //gréage- Lee Harry Clayden //un grand merci à- Hugo Mega, François Bouvier, Vera Tussing, Anneleen Keppens",

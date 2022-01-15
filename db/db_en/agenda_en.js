@@ -56,7 +56,7 @@ const agenda_en = {
       type_href: "/en/collab",
     },
     danse_cite: {
-      title: "Espace recherche",
+      title: "Through us ( comme espace ) passions .pt2",
       institution_href: "https://danse-cite.org/en/",
       dates: "18-22oct",
       institution: "Danse-Cité / The Mainline",
