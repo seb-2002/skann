@@ -14,7 +14,7 @@ const bio_fr = {
       p_3: "sa pratique a évolué ensuite au sein des communautés de cirque et de la danse, en Europe comme en Amérique du Nord.",
     },
     {
-      p_1: "Entre 2013 et 2017, Sebastian vit à Bruxelles. Là-bas, il crée",
+      p_1: "Entre 2013 et 2020, Sebastian vit à Bruxelles. Là-bas, il crée",
       p_2: {
         anchor: "<<Always / Beautiful>>",
         href: " https://manorhouseforever.net/performances",
