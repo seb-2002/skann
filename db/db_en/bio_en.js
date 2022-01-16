@@ -24,7 +24,7 @@ const bio_en = {
         anchor: "'Always / Beautiful'",
         href: " https://manorhouseforever.net/performances",
       },
-      p_5: "asks questions about why and how to stage technical virtuosity in the context of a culture that values high performance over quality of life. It’s a duet for a large, suspended climbing net. ",
+      p_5: "asks questions about why and how to stage technical virtuosity in the context of a culture that values high performance over quality of life. It's a duet for a large, suspended climbing net. ",
     },
     {
       p: "In Brussels, he also collaborated with",
@@ -45,7 +45,7 @@ const bio_en = {
       p_7: "(2018), working in the studio as her dramaturge. Their research together revolved around dance as a touched relation, and spectatorship as a mode of (literally and figuratively) touching and being touched. Vera and Sebastian continue to think through her practice together.",
     },
     {
-      p: "Sebastian spent 4 years learning and researching at Utrecht University as a master’s student in the",
+      p: "Sebastian spent 4 years learning and researching at Utrecht University as a master's student in the",
       p_1: {
         anchor: "department of Media and Culture Studies,",
         href: "https://www.uu.nl/en/organisation/department-of-media-and-culture-studies",
@@ -138,7 +138,7 @@ const bio_en = {
     {
       p: "He lives in Montréal / Tiohtiá:ke, on the expropriated land of the",
       p_2: {
-        anchor: "Kanien’kehá:ka (Haudenosaunee Confederacy).",
+        anchor: "Kanien'kehá:ka (Haudenosaunee Confederacy).",
         href: "https://en.wikipedia.org/wiki/Mohawk_people",
       },
     },

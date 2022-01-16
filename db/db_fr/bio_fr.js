@@ -6,7 +6,7 @@ const bio_fr = {
       p: "Sebastian Kann (lui/il) est créateur, dramaturge, théoricien et interprète.",
     },
     {
-      p: "Diplômé de L’École nationale de cirque de",
+      p: "Diplômé de L'École nationale de cirque de",
       p_2: {
         anchor: "Montréal / Tiohtiá:ke,",
         href: "https://www.mcgill.ca/indigenous/fr/trousses-doutils-pour-les-allies",
@@ -24,10 +24,10 @@ const bio_fr = {
         anchor: "Natalie Oleinik,",
         href: "https://vimeo.com/noleinik",
       },
-      p_5: "création pour théâtre ‘boîte noire’ (première en 2019). L’œuvre se déroule sur, sous, et autour d’un énorme filet à grimper. Il s’agit de l’immobilité, de l’humour, de la musique pop, de l’improvisation, du non-vu, du support de l’autre, de l’amitié, et d’une imagination multiple de l’avenir.",
+      p_5: "création pour théâtre 'boîte noire' (première en 2019). L'œuvre se déroule sur, sous, et autour d'un énorme filet à grimper. Il s'agit de l'immobilité, de l'humour, de la musique pop, de l'improvisation, du non-vu, du support de l'autre, de l'amitié, et d'une imagination multiple de l'avenir.",
     },
     {
-      p: "C’est à Bruxelles aussi que Sebastian rencontre",
+      p: "C'est à Bruxelles aussi que Sebastian rencontre",
       p_1: {
         anchor: "Vera Tussing,",
         href: "https://www.veratussing.com/",
@@ -45,12 +45,12 @@ const bio_fr = {
       p_7: "(2018). Cette recherche aborde la danse comme étant une rencontre tactile: entre danseur.e et spectateur.trice, entre corps et objet, entre regard et texture. Vera et Sebastian continuent à réfléchir à partir de, et à travers la pratique de Vera Tussing.",
     },
     {
-      p: "Pendant 4 ans, Sebastian fait de la recherche en tant qu’étudiant au sein du",
+      p: "Pendant 4 ans, Sebastian fait de la recherche en tant qu'étudiant au sein du",
       p_1: {
-        anchor: "département d’études des médias et de la culture",
+        anchor: "département d'études des médias et de la culture",
         href: "https://www.uu.nl/en/organisation/department-of-media-and-culture-studies",
       },
-      p_2: "à l’université d’Utrecht, notamment sous la supervision de",
+      p_2: "à l'université d'Utrecht, notamment sous la supervision de",
       p_3: {
         anchor: "Maaike Bleeker",
         href: "http://www.theatrestudies.nl/academic-staff/maaike-bleeker/",
@@ -60,7 +60,7 @@ const bio_fr = {
         anchor: "Konstantina Georgelou.",
         href: "http://www.theatrestudies.nl/academic-staff/konstantina-georgelou/",
       },
-      p_7: "Ses objets et vecteurs de recherche sont: l’improvisation en danse, les figures circassiennes, le libéralisme et son idéologie, le corps et les philosophes du post-structuralisme.",
+      p_7: "Ses objets et vecteurs de recherche sont: l'improvisation en danse, les figures circassiennes, le libéralisme et son idéologie, le corps et les philosophes du post-structuralisme.",
     },
     {
       p: "Entre 2018 et 2020, Sebastian prend part à un groupe de recherche",
@@ -86,7 +86,7 @@ const bio_fr = {
       p_9: "un livre qui recueille plusieurs dialogues tenus lors des deux années du projet, est publié en 2020.",
     },
     {
-      p: "Sebastian travaille également en tant que dramaturge aussi bien qu’interprète pour",
+      p: "Sebastian travaille également en tant que dramaturge aussi bien qu'interprète pour",
       p_2: {
         anchor: "Emile Pineault,",
         href: "https://emilepineault.com/",
@@ -122,12 +122,12 @@ const bio_fr = {
       },
     },
     {
-      p: "Actuellement, il crée une danse qui souligne l’absurdité de la tentative de faire signifier la danse comme l’on voudrait",
+      p: "Actuellement, il crée une danse qui souligne l'absurdité de la tentative de faire signifier la danse comme l'on voudrait",
       p_2: {
         anchor: "(Topical Dance)",
         href_int: "/fr/works",
       },
-      p_3: "Il enseigne à l’ENC des",
+      p_3: "Il enseigne à l'ENC des",
       p_4: {
         anchor: "cours de théorie",
         href_int: "/fr/pgogy",
@@ -138,7 +138,7 @@ const bio_fr = {
     {
       p: "Seb habite à Montréal / Tiohtiá:ke, sur les territoires non cédés des",
       p_2: {
-        anchor: "Kanien’kehá:ka (Fédération Haudenosaunee).",
+        anchor: "Kanien'kehá:ka (Fédération Haudenosaunee).",
         href: "https://fr.wikipedia.org/wiki/Mohawks",
       },
     },
