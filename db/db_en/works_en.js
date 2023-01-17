@@ -8,7 +8,7 @@ const works_en = {
     year: "research 2022",
     src: "/static/src/td_img.png",
     credits:
-      "How does dance negotiate about-ness? A composition-driven research for one performing body, some lights and a screen.",
+      "How does dance negotiate about-ness? A composition-driven research for one performing body, some lights and a screen. //creation, performance- Sebastian Kann //dramaturgy- Erin Hill //movement development- Maria Kefirova //sound- Simone Provencher //projections- Timothy Thomasson //lights- Karine Gauthier //space- Nien-Tzu Weng",
     href_ex: "https://vimeo.com/666322647",
   },
 
@@ -18,8 +18,8 @@ const works_en = {
     year: "creation 2019 (vimeo password: ab2019)",
     src: "/static/src/ab_pic_1.jpg",
     credits:
-      "creation- Natalie Oleinik + Sebastian Kann //dramaturgy- Ilse Ghekiere //lights- Bert van Dijck //rigging- Lee Harry Clayden //special thanks to- Hugo Mega, François Bouvier, Vera Tussing, Anneleen Keppens",
-    href_ex: "https://manorhouseforever.net/performances",
+      "creation, performance- Natalie Oleinik + Sebastian Kann //dramaturgy- Ilse Ghekiere //lights- Bert van Dijck //rigging- Lee Harry Clayden //special thanks to- Hugo Mega, François Bouvier, Vera Tussing, Anneleen Keppens",
+    href_ex: "https://vimeo.com/388184709",
   },
 
   choreographing_touch: {

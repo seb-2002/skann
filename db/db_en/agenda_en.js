@@ -288,7 +288,7 @@ const agenda_en = {
     ab_degrotepost: {
       title: "Always / Beautiful",
       dates: "6feb",
-      project_href: "https://manorhouseforever.net/performances",
+      project_href: "/en/works",
       institution: "De Grote Post",
       institution_href:
         "https://www.degrotepost.be/agenda/1974/Manor_House/Always_Beautiful/",
@@ -323,7 +323,7 @@ const agenda_en = {
     ab: {
       title: "Always / Beautiful",
       dates: "11-15nov",
-      project_href: "https://manorhouseforever.net/performances",
+      project_href: "/en/works",
       institution: "Theater op de Markt",
       institution_href:
         "https://www.theateropdemarkt.be/programma/programmaboek/",

@@ -7,6 +7,8 @@ const works_fr = {
     year: "recherche 2022",
     src: "/static/src/td_img.png",
     href_ex: "https://vimeo.com/666322647",
+    credits:
+      "création, interprétation- Sebastian Kann //dramaturgie- Erin Hill //developpement de mouvement- Maria Kefirova //son- Simone Provencher //image- Timothy Thomasson //éclairage- Karine Gauthier //espace- Nien-Tzu Weng",
   },
 
   always_beautiful: {
@@ -16,7 +18,7 @@ const works_fr = {
     src: "/static/src/ab_pic_1.jpg",
     credits:
       "création, interpétation- Natalie Oleinik + Sebastian Kann //dramaturgie- Ilse Ghekiere //éclairage- Bert van Dijck //gréage- Lee Harry Clayden //un grand merci à- Hugo Mega, François Bouvier, Vera Tussing, Anneleen Keppens",
-    href_ex: "https://manorhouseforever.net/performances",
+    href_ex: "https://vimeo.com/388184709",
   },
 
   choreographing_touch: {
