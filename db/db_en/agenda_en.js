@@ -299,10 +299,10 @@ const agenda_en = {
     circusdialogues_symp: {
       title: "Smells Like Dialogue + Book Launch 'Thinking Through Circus'",
       dates: "13-17jan",
-      project_href: "https://www.circusdialogue.com/gallery",
-      institution: "Voo?uit",
-      institution_href:
-        "https://www.vooruit.be/en/agenda/2365/A_Circus_Symposium/Smells_like_Dialogue/",
+      project_href:
+        "https://artpapereditions.org/products/bauke-lievens-quintijn-ketels-sebastian-kann-vincent-focquet-eds-thinking-through-circus",
+      institution: "viernulvier",
+      institution_href: "https://www.viernulvier.gent/en/",
       place: "Ghent",
       type: "symposium/work week",
       type_href: "/en/works",
