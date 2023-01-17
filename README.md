@@ -16,6 +16,20 @@ Make the changes.
 
 Run `npm run bundle` to update the javascript.
 
+## Deploying the updates
+
+Merge the new branch into the master by running
+
+```
+git add .
+git commit -m "this is what I changed"
+git checkout master
+git merge new_branch_name
+git push
+heroku login
+git push heroku login
+```
+
 ## Database
 
 ### Agenda
