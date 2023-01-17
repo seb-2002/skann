@@ -18,7 +18,7 @@ Run `npm run bundle` to update the javascript.
 
 ## Deploying the updates
 
-Merge the new branch into the master by running
+Merge the new branch into the master and deploy it to heroku by running
 
 ```
 git add .

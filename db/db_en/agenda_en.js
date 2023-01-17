@@ -79,7 +79,16 @@ const agenda_en = {
       institution_href: "https://odd-cdc.org/",
       place: "Ottawa",
     },
-    td_belgium: {
+    montreal_danse: {
+      type: "residency",
+      type_href: "/en/collab",
+      title: "Choreographic Research / Sarah Manya",
+      dates: "fall2022",
+      institution: "Montréal Danse",
+      institution_href: "https://montrealdanse.com/new2/",
+      place: "Montréal / Tiohtiá:ke",
+    },
+    td_flak: {
       type: "residency",
       type_href: "/en/works",
       title: "Topical Dance",
